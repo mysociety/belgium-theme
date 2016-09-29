@@ -177,6 +177,8 @@ a.link_button_green_large {
 .popup {
   background-color: desaturate(lighten($notice-color, 30%),10%);
   border: 3px solid $notice-color;
+
+  img { margin: 0 10px; }
 }
 
 
