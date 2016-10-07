@@ -175,8 +175,26 @@ a.link_button_green_large {
 /* Popups */
 
 .popup {
-  background-color: desaturate(lighten($notice-color, 30%),10%);
-  border: 3px solid $notice-color;
+  background-color: #393738;
+  border: 1px solid white;
+  color: white;
+
+  img { margin: 0 10px; }
+
+  a {
+    color: white;
+    font-weight: bold;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color_orange;
+    }
+  }
+
+  .popup-close {
+    color: white;
+    background: url('/assets/small-white-cross.png') no-repeat 0;
+  }
 }
 
 
