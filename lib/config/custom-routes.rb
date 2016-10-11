@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   # match '/mycontroller' => 'general#mycontroller'
   # Additional help page example
   # match '/help/help_out' => 'help#help_out'
+
+  match '/help/conditions' => 'help#conditions', :as => 'help_conditions'
 end
