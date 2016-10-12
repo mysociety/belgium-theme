@@ -1,0 +1,34 @@
+<% @title = "Saisir la CADA" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip" class="left_column_flip">
+  <h1 id="cada"><%= @title %> <a href="#cada">#</a></h1>
+  <p>Si vous n’êtes pas satisfait de la réponse transmise par l’autorité publique ou si l’autorité publique n’a pas répondu dans le délai légal (30 jours) vous pouvez demander à la Commission d’Accès aux Documents (CADA) de remettre un avis sur votre demande.</p>
+
+  <p>Cette possibilité n’est offerte que pour les autorités publiques qui sont soumises à la législation sur la publicité de l’administration.</p>
+
+  <p>Attention, la demande d’avis à la CADA doit <b>OBLIGATOIREMENT</b> être envoyée le même jour que la demande de reconsidération envoyée à l’autorité publique.</p>
+
+  <p><%= site_name %> n'est pas encore prévu pour le traitement des demandes d’avis à la CADA. Ces demandes doivent être envoyées directement à la CADA par mail ou par courrier.</p>
+
+  <p>Transmettez à la CADA le lien vers votre demande sur le site <%= site_name %> ou imprimez cette demande afin que la CADA puisse avoir accès à l’ensemble de vos échanges avec l’autorité publique.</p>
+
+  <p>Enfin, tenez-nous au courant de l’évolution de votre demande à la CADA en postant des commentaires de suivi en bas de votre demande.</p>
+
+  <p>Si votre recours présente un intérêt particulier pour d’autres personnes (et que nous en avons le temps), nous nous ferons un plaisir de vous conseiller pour améliorer votre demande à la commission (CADA) par mail à <a href="mailto:<%=@contact_email%>"><%=@contact_email%></a>.</p>
+
+  <p>Vous trouverez ci-dessous des liens vers les Commissions d’Accès aux Documents Administratifs (CADA).</p>
+
+  <p>Fédéral : <a href="http://www.ibz.rrn.fgov.be/fr/commissions/publicite-de-ladministration/">http://www.ibz.rrn.fgov.be/fr/commissions/publicite-de-ladministration/</a></p>
+
+  <p>Wallonie : <a href="http://www.cada-wb.be/">http://www.cada-wb.be/</a></p>
+
+  <p>Fédération Wallonie-Bruxelles : <a href="http://www.cada-wb.be/">http://www.cada-wb.be/</a></p>
+
+  <p>Bruxelles : <a href="http://be.brussels/a-propos-de-la-region/le-ministere-de-la-region-de-bruxelles-capitale/secretariat-general/gestion-des-ressources-humaines/direction-de-la-fonction-publique-1/commission-dacces-aux-documents-administratifs">http://be.brussels/a-propos-de-la-region/le-ministere-de-la-region-de-bruxelles-capitale/secretariat-general/gestion-des-ressources-humaines/direction-de-la-fonction-publique-1/commission-dacces-aux-documents-administratifs</a></p>
+
+  <p><strong>Suivant</strong>, en savoir plus sur <a href="<%= help_privacy_path %>">Votre vie privée</a> --&gt;</p>
+
+  <div id="hash_link_padding"></div>
+</div>

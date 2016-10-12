@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # match '/help/help_out' => 'help#help_out'
 
   match '/help/conditions' => 'help#conditions', :as => 'help_conditions'
+  match '/help/cada' => 'help#cada', :as => 'help_cada'
 end

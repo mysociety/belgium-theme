@@ -21,5 +21,9 @@ Rails.configuration.to_prepare do
     def conditions
       @contact_email = AlaveteliConfiguration::contact_email
     end
+
+    def cada
+      @contact_email = AlaveteliConfiguration::contact_email
+    end
   end
 end
