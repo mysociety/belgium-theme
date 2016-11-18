@@ -1,4 +1,4 @@
-<% @title = "Unhappy about a Freedom of Information request?" %>
+<% @title = "Mécontent de la réponse que vous avez reçue ?" %>
 
 
 <% if @info_request %>
@@ -6,111 +6,118 @@
     to your request '<%=request_link(@info_request) %>'?
   </h1>
 <% else %>
-  <h1>Unhappy about the response you got?</h1>
+  <h1><%= @title %></h1>
 <% end %>
 
-<p>If ...</p>
+<p>Si …</p>
 
 <ul>
-  <li>You didn't get a reply within 20 working days</li>
-  <li>You did not get all of the information that you requested <strong>or</strong></li>
-  <li>Your request was refused, but without a reason valid under the law</li>
+  <li>Vous n'avez pas reçu de réponse endéans les 30 jours</li>
+  <li>Vous n'avez pas obtenu toutes les informations que vous avez demandées</li>
+  <li>Votre demande a été refusée, sans raison légale valable</li>
 </ul>
 
-<p>... you can</p>
+<p>… vous pouvez</p>
 
 <ol>
-  <li>Ask for an <strong>internal review</strong> at the public authority.</li>
-  <li>If that doesn't help, complain to the <strong>Information Commissioner</strong>.</li>
-  <li>Either way, also <strong>use other means</strong> to answer your question.</li>
+  <li>Envoyer une demande de reconsidération aux autorités publiques</li>
+  <li>Envoyer simultanément une demande d’avis à la Commission d’Accès aux Documents Administratifs (CADA) pour les autorités publiques qui sont soumises à la législation sur la publicité de l’administration</li>
+  <li>Utiliser d'autres moyens pour obtenir la réponse à votre question</li>
 </ol>
 
-<h1 id="internal_review">1. Asking for an internal review <a class="hover_a" href="#internal_review">#</a> </h1>
+<h1 id="internal_review">1. Envoyer une demande de reconsidération <a class="hover_a" href="#internal_review">#</a> </h1>
 
 <p>
   <% if @info_request %>
     <%= link_to "Request an internal review", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> and then write a message asking the authority to review your request.
   <% else %>
-    At the bottom of the relevant request page on <%= site_name %> choose
-    "request an internal review". Then write a message asking for an internal
-    review of your request. You may want to include a link to the
-    request page, to make it clear which request you are talking about.
+    En bas de la page de la demande sur <%= site_name %> choisissez "Demander
+    une reconsidération". Ensuite, écrivez un message demandant à l’autorité de
+    reconsidérer votre demande. N'oubliez pas d'inclure un lien vers la page de
+    la demande sur Transparencia afin que nous sachions de quelle demande il
+    s'agit.
   <% end %>
 </p>
 
-<p>Internal reviews should be quick. If one takes longer than 20 working days
-  then the authority should write and let you know, and it should never take
-  longer than 40 working days (see this
-  <a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/detailed_specialist_guides/foi_good_practice_guidance_5.pdf">good
-    practice guide</a>).
-  You will then either get the information that
-  you originally requested, or you will be told that the review upholds the
-  original decision.
+<h1 id="complaining">2. Demander un avis à la Commission d’Accès aux Documents Administratifs (CADA) <a class="hover_a" href="#complaining">#</a> </h1>
+
+<p>
+  Pour les autorités publiques qui sont soumises à la législation sur la
+  publicité de l’administration vous pouvez demander à la Commission d’Accès
+  aux Documents (CADA) de remettre un avis sur votre demande. Attention, la
+  demande d’avis à la CADA doit <strong>OBLIGATOIREMENT</strong> être envoyée
+  le même jour que la demande de reconsidération envoyée à l’autorité publique.
 </p>
 
-<h1 id="complaining">2. Complaining to the Information Commissioner <a class="hover_a" href="#complaining">#</a> </h1>
-
-<p>If you are still unhappy after the public authority has done their internal review,
-  then you can complain to the Information Commissioner. To do this read
-  <a href="http://www.ico.gov.uk/complaints/freedom_of_information.aspx">Complaints about Freedom of Information</a>
-  on the Information Commissioner's website. If you requested information from a Scottish
-  authority, then  <a href="http://www.itspublicknowledge.info/YourRights/HowToAppeal/Appeal.asp">appeal
-    to the Scottish Information Commissioner</a>.
+<p>
+  Transparencia n'est pas encore prévu pour le traitement des demandes d’avis à
+  la CADA. Ces demandes doivent être envoyées directement à la CADA par mail ou
+  par courrier. 
 </p>
 
-<p>To make it easier to send the relevant information to the
-  Information Commissioner, either
-  <% if @info_request %>
-    include a link to your request
-    <strong><%=h request_url(@info_request) %></strong>
-  <% else %>
-    include a link to your request on <%= site_name %>
-<% end %>
-in your complaint or print out the whole page of your request and all attachments.
+<p>
+  Transmettez à la CADA le lien vers votre demande sur le site Transparencia ou
+  imprimez cette demande afin que la CADA puisse avoir accès à l’ensemble de
+  vos échanges avec l’autorité publique.
 </p>
 
-<p><%= site_name %> has no special facilities for handling a request at this stage - it
-  passes into the Information Commissioner's system. You can leave annotations on your
-  request keeping people informed of progress.</p>
+<p>
+  Enfin, tenez-nous au courant de l’évolution de votre demande à la CADA en
+  postant des commentaires de suivi en bas de votre demande.
+</p>
 
-<p>A warning. There is a backlog of work at the Information Commissioner, and
-  it can take literally years to get resolution from them. If you reach this point,
-  you should accept that you won't get the information quickly by this means. Maybe
-  you want to help the fight to improve Freedom of Information, or maybe
-  getting the information slowly is still worthwhile. You can also try and
-  get the information by <strong>other means...</strong></p>
+<p>
+  Si votre recours présente un intérêt particulier pour d’autres personnes (et
+  que nous en avons le temps), nous nous ferons un plaisir de vous conseiller
+  pour améliorer votre demande à la commission (CADA) par mail à
+  <%= mail_to 'info@transparencia.be' %>.
+</p>
 
-<h1 id="other_means">3. Using other means to answer your question <a class="hover_a" href="#other_means">#</a> </h1>
+<p>
+  Pour plus d’information consulter la section <%= link_to 'Saisir la CADA',
+    help_cada_path %>.
+</p>
 
-<p>You can try persuing your problem or your research in other ways.</p>
+<h1 id="other_means">3. Utiliser d'autres moyens pour obtenir la réponse à votre question <a class="hover_a" href="#other_means">#</a> </h1>
+
+<p>
+  Vous pouvez essayer d’obtenir la réponse à votre question en ayant recours à
+  d'autres procédés.
+</p>
 
 <ul>
-  <li>Make a <strong>new FOI request</strong> for summary information, or for
-    documentation relating indirectly to matters in your refused request.
-    <a href="<%= help_contact_path %>">Ask us for ideas</a> if you're stuck.</li>
-  <li>If any <strong>other public authorities</strong> or publicly owned companies are involved,
-    then make FOI requests to them.</li>
-  <li>Write to <strong>your MP</strong> or other politician using <a
-       href="http://www.writetothem.com">WriteToThem</a> and ask for their help
-     finding the answer. MPs can write directly to ministers or departments, and
-     can ask written questions in the House of Commons. Councillors in local authorities
-     can talk directly to council officers.</li>
+  <li>
+    Faites une nouvelle demande d'accès à l'information en l’adaptant en
+    fonction des motifs de refus de l’autorité publique.
+  </li>
+  <li>
+    Si une autre autorité publique est concernée ou possède les informations
+    recherchées, vous pouvez lui envoyer une demande d'information.
+  </li>
+  <li>
+    Écrivez à un député ou à un autre politicien et demandez-lui de l'aide pour
+    trouver la réponse à votre question. Les députés peuvent faire des demandes
+    aux autorités publiques et ils peuvent faire des interpellations au
+    parlement. Les conseillers communaux peuvent faire des interpellations au
+    collège communal et obtenir un document dans les 10 jours.
+  </li>
   <% if can_ask_the_eu?(@country_code) %>
     <li>
-      Try <%= link_to 'asking for the information from the European Union',
-      'http://www.asktheeu.org' %>. Every one of the 500 million people
-      living in the European Union (both citizens and residents) has the
-      legally guaranteed right to ask for information from EU authorities.
-      <%= link_to 'Ask The EU', 'http://www.asktheeu.org' %> is a version of
-      this website for the European Union.
+      Selon la nature de votre demande vous pouvez peut-être faire une demande
+      via l'Union européenne. <%= link_to 'AskTheEU',
+      'https://www.asktheeu.org/' %> est une version identique à
+      Transparencia pour les demandes d’accès à l’information de l'Union
+      européenne.
     </li>
   <% end %>
-  <li>Ask <strong>other researchers</strong> who are interested in a similar
-    issue to yours for ideas. You can sometimes find them by browsing this site;
-    contact any registered user from their page. There may be an Internet
-    forum or group that they hang out in. If it is a local matter, use <a
-       href="http://www.groupsnearyou.com">GroupsNearYou</a> to find such a
-     forum.</li>
-  <li>You could form a small local campaign group and arrange a meeting
-    with staff from the authority.</li>
+  <li>
+    Demandez de l’aide à d'autres personnes qui sont intéressés par une
+    question semblable à la vôtre. Vous pouvez parfois les trouver en naviguant
+    dans les précédents demandes faites via Transparencia. Vous pouvez
+    communiquer avec un utilisateur enregistré à partir de sa page.
+  </li>
+  <li>
+    Vous pourriez aussi par exemple former un petit groupe de travail et
+    organiser une réunion avec l'autorité concernée.
+  </li>
 </ul>
