@@ -2,8 +2,9 @@
 
 
 <% if @info_request %>
-  <h1>Unhappy about the response you got
-    to your request '<%=request_link(@info_request) %>'?
+  <h1>
+    Mécontent de la réponse que vous avez reçue pour votre demande
+    '<%= request_link(@info_request) %>'?
   </h1>
 <% else %>
   <h1><%= @title %></h1>
@@ -29,7 +30,7 @@
 
 <p>
   <% if @info_request %>
-    <%= link_to "Request an internal review", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> and then write a message asking the authority to review your request.
+    <%= link_to "Demander une reconsidération", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> and then write a message asking the authority to review your request.
   <% else %>
     En bas de la page de la demande sur <%= site_name %> choisissez "Demander
     une reconsidération". Ensuite, écrivez un message demandant à l’autorité de
