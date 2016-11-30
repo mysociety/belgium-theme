@@ -1,16 +1,20 @@
-<%= raw @info_request.public_body.name %> <%= _('are long overdue.')%>
+<%= raw @info_request.public_body.name %> <%= _('have delayed.') %>
 
-<%= _('They have not replied to your {{law_used_short}} request {{title}}, ' \
-      'as required by law',
-      :law_used_short => @info_request.law_used_human(:short),
-      :title => @info_request.title)%>.
+<%= _("They have not replied to your {{law_used_short}} request {{title}}, " \
+      "\nas required by law",
+      :law_used_short => @info_request.law_used_human(:short).html_safe,
+      :title => @info_request.title.html_safe) %>.
 
-<%= _('Click on the link below to send a message to {{public_body_name}} ' \
-      'telling them to reply to your request. You might like to ask for ' \
-      'an internal review, asking them to find out why response to the ' \
-      'request has been so slow.',
-      :public_body_name => @info_request.public_body.name) %>
+<%= _('You can:') %>
 
-<%= @url %>
+ - <%= _("Either contact the Commission d'Accès aux Documents Administratifs " \
+        "(CADA) (more information {{info_url}})",
+        :info_url => "https://transparencia.be/help/cada") %>
 
--- <%= _('the {{site_name}} team', :site_name => site_name) %>
+ - <%= _('Or send a message to {{public_body}} reminding them to ' \
+         'reply to your request (using the form {{form_url}}).',
+         :public_body => @info_request.public_body.name.html_safe,
+         :form_url => @url) %>
+
+-- <%= _('the {{site_name}} team', :site_name => site_name.html_safe) %>
+
