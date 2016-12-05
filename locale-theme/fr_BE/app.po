@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
@@ -24,15 +23,14 @@ msgstr ""
 msgid "Contact us"
 msgstr ""
 
-#, fuzzy
 msgid "Either contact {{public_body}} and, on the same day, the Commission d'Accès aux Documents Administratifs (CADA) (more information {{info_url}})"
-msgstr "Soit saisir la Commission d'Accès aux Documents Administratifs (CADA) (plus d'infos {{info_url}})"
+msgstr "Soit envoyer une demande de reconsidération à {{public_body}} et, le même jour, saisir la Commission d'Accès aux Documents Administratifs (CADA) (plus d'infos {{info_url}})"
 
 msgid "Help"
 msgstr ""
 
 msgid "Or send a message to {{public_body}} reminding them to reply to your request (using the form {{form_url}})."
-msgstr "Soit envoyer un message à {{public_body}} afin de leur rappeler de répondre à votre demande (lien vers le formulaire {{form_url}})."
+msgstr "Soit envoyer un simple message à {{public_body}} afin de leur rappeler de répondre à votre demande (lien vers le formulaire {{form_url}})."
 
 msgid "Privacy and cookies"
 msgstr ""

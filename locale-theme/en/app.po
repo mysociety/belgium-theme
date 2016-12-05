@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
@@ -24,9 +23,8 @@ msgstr "API"
 msgid "Contact us"
 msgstr "Contact us"
 
-#, fuzzy
 msgid "Either contact {{public_body}} and, on the same day, the Commission d'Accès aux Documents Administratifs (CADA) (more information {{info_url}})"
-msgstr "Either contact the Commission d'Accès aux Documents Administratifs (CADA) (more information {{info_url}})"
+msgstr "Either contact {{public_body}} and, on the same day, the Commission d'Accès aux Documents Administratifs (CADA) (more information {{info_url}})"
 
 msgid "Help"
 msgstr "Help"
