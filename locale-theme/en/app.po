@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-05 05:03-0800\n"
+"POT-Creation-Date: 2016-12-08 09:30-0800\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,14 +29,17 @@ msgstr "Either contact {{public_body}} and, on the same day, the Commission d'Ac
 msgid "Help"
 msgstr "Help"
 
+msgid "If you have not already done so, you can:"
+msgstr "If you have not already done so, you can:"
+
 msgid "Or send a message to {{public_body}} reminding them to reply to your request (using the form {{form_url}})."
 msgstr "Or send a message to {{public_body}} reminding them to reply to your request (using the form {{form_url}})."
 
 msgid "Privacy and cookies"
 msgstr "Privacy and cookies"
 
-msgid "They have not replied to your {{law_used_short}} request {{title}} promptly, as normally required by law"
-msgstr "They have not replied to your {{law_used_short}} request {{title}} promptly, as normally required by law"
+msgid "They have not replied to your {{law_used_short}} request {{title}}, as required by law"
+msgstr "They have not replied to your {{law_used_short}} request {{title}}, as required by law"
 
 msgid "Would you like to see a website like this in your country?"
 msgstr "Would you like to see a website like this in your country?"
