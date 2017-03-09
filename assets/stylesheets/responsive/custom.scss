@@ -172,6 +172,29 @@ a.link_button_green_large {
   @include button-primary($size: large);
 }
 
+
+/* Action Bar Mixins */
+
+@mixin follow-button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
+}
+
+@mixin follower-count {
+  color: $color_dark_grey;
+  padding: 0.56em 1.25em;
+  border: 1px solid $color_light_grey;
+  position: relative;
+  left: -3px;
+  line-height: 1.6em;
+  border-left: 0;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
 /* Popups */
 
 .popup {
@@ -576,6 +599,28 @@ a.link_button_green_large {
 }
 
 /* Request page */
+.request-header__action-bar__actions {
+  .action-menu__button {
+    @include button-secondary();
+    &:after {
+      border-color: #a5a5a5 transparent transparent transparent;
+      right: 7%;
+    }
+  }
+
+  .action-bar__follow-button {
+    .track__action {
+      @include button-primary();
+      @include follow-button();
+    }
+  }
+
+  .action-bar__follower-count {
+    color: $color_dark_grey;
+    @include follower-count();
+  }
+}
+
 div.correspondence {
   background-color: $color_white;
   box-shadow: 0 2px 2px transparentize($color_black, 0.8);
@@ -816,14 +861,17 @@ dt {
 }
 
 /* Authority page */
-.action-bar__follower-count {
-  padding: 3px;
-  font-size: 1.1rem;
-}
+.authority__header__action-bar {
+  .action-bar__follow-button {
+    .track_action,
+    .link_button_green {
+      @include button-secondary();
+      @include follow-button();
+    }
+  }
 
-.action-bar__follow-button {
-  .link_button_green {
-    @include button-secondary();
+  .action-bar__follower-count {
+    @include follower-count();
   }
 }
 
