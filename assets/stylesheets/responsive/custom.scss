@@ -760,6 +760,31 @@ a.correspondence__header__date:visited {
   }
 }
 
+
+.request-footer__action-bar__actions {
+  .action-menu__button {
+    @extend .button-secondary;
+    padding-right: 2em;
+    &:after {
+      border-color: #a5a5a5 transparent transparent transparent;
+      right: 7%;
+    }
+  }
+
+  a.link_button_green,
+  a.track_action {
+    line-height: 1.5em;
+    @include follow-button;
+  }
+
+  .action-bar__follower-count {
+    color: $color_dark_grey;
+    @include respond-min($main_menu-mobile_menu_cutoff) {
+      @include follower-count;
+    }
+  }
+}
+
 #header_right {
   .link_button_green {
     @include button-secondary;
