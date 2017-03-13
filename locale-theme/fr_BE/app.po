@@ -5,14 +5,13 @@
 #
 # Translators:
 # Liz Conlan <liz@mysociety.org>, 2016
-# Christophe Van Gheluwe <info@vg-webdesign.be>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-08 09:37-0800\n"
+"POT-Creation-Date: 2017-03-13 15:57+0000\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
-"Last-Translator: Christophe Van Gheluwe <info@vg-webdesign.be>, 2017\n"
+"Last-Translator: Liz Conlan <liz@mysociety.org>, 2016\n"
 "Language-Team: French (Belgium) (https://www.transifex.com/mysociety/teams/69575/fr_BE/)\n"
 "Language: fr_BE\n"
 "MIME-Version: 1.0\n"
@@ -40,6 +39,9 @@ msgstr "Soit envoyer un simple message à {{public_body}} afin de leur rappeler 
 
 msgid "Privacy and cookies"
 msgstr "Vie privée et cookies"
+
+msgid "Terms of use"
+msgstr ""
 
 msgid "They have not replied to your {{law_used_short}} request {{title}}, as required by law"
 msgstr "Ils n'ont pas répondu à votre demande de {{law_used_short}} {{title}}, comme requis par la loi"
