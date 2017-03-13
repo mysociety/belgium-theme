@@ -41,7 +41,7 @@ msgid "Privacy and cookies"
 msgstr "Privacy en cookies"
 
 msgid "Terms of use"
-msgstr ""
+msgstr "Gebruiksvoorwaarden"
 
 msgid "They have not replied to your {{law_used_short}} request {{title}}, as required by law"
 msgstr "Ze hebben niet geantwoord op uw vraag van {{law_used_short}} {{title}} in de door de wet voorgeschreven termijn"
