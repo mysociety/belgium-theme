@@ -1,0 +1,104 @@
+<% @title = "Uw privacy" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip" class="left_column_flip">
+  <h1 id="privacy"><%= @title %> <a href="#privacy">#</a></h1>
+  <dl>
+
+    <dt id="email_address">Wie kan mijn e-mailadres zien? <a href="#email_address">#</a> </dt>
+
+    <dd>
+      <p>
+        Wij zullen nooit uw e-mailadres publiek maken, tenzij we daartoe wettelijk verplicht worden of als u het ons vraagt.
+      </p>
+      <p>
+        Indien u een verzoek om informatie (vraag om openbaarheid) indient bij een overheidsinstantie krijgt de bestemmeling het e-mailadres “@<%= AlaveteliConfiguration::incoming_email_domain %>”, specifiek voor dit verzoek.
+      <p>
+        Indien u een bericht stuurt naar een andere gebruiker van de site, zal uw persoonlijk e-mailadres wel zichtbaar zijn. In dat geval zal u daarvan op de hoogte gebracht worden.
+      </p>
+    </dd>
+
+    <dt id="nasty_spam">Gaan jullie mijn inbox vullen met spam? <a href="#nasty_spam">#</a> </dt>
+    <dd>Neen, eenmaal aangemeld bij Transparencia, sturen we enkel e-mailberichten die verband houden met een vraag die u stelde (een verzoek dat u deed), een e-mailnotificatie waarvoor u zich eventueel heeft ingeschreven, of andere redenen waarvoor u expliciet uw goedkeuring gaf.We zullen nooit uw e-mailadres doorgeven of  verkopen aan derden, tenzij we daartoe wettelijk verplicht worden of u het ons vraagt.
+    </dd>
+
+    <dt id="public_request">Waarom verschijnt mijn naam en verzoek om informatie openbaar op de website? <a href="#public_request">#</a> </dt>
+
+    <dd>
+      <p>Wij publiceren uw vraag (verzoek) op het internet zodat iedereen toegang heeft tot de door jou ingewonnen informatie en deze ook kan gebruiken. Normaal gezien verwijderen we geen verzoeken (voor meer informatie, zie “<a href="#takedown">Kan u mijn persoonlijke gegevens verwijderen?</a>”).
+      </p>
+      <p>
+        Uw naam is verbonden aan uw verzoek om informatie, dus wordt deze ook gepubliceerd. Door uw echte naam te gebruiken bent u gemakkelijker terug te vinden door mensen die u willen helpen bij uw onderzoek of mee willen campagne voeren. Het is ook wettelijk verplicht om in het kader van de openbaarheid van bestuur uw echte naam te gebruiken.
+      </p>
+      <p>
+        Voor alternatieven, dus indien u niet wil dat uw volledige naam gepubliceerd wordt, zie de volgende vraag.
+      </p>
+    </dd>
+
+    <dt id="real_name">Kan ik een vraag om openbaarheid indienen onder een pseudoniem? <a href="#real_name">#</a> </dt>
+    <dd>
+      <p>
+        U moet uw eigen naam gebruiken indien u wenst dat uw aanvraag wordt weerhouden. Desondanks zou een openbaar bestuur moeten antwoorden indien u een pseudoniem gebruikt maar u zal de CTB niet kunnen vatten in het geval u geen antwoord verkrijgt.
+      </p>
+
+      <p>Er zijn echter enkele alternatieven voor het gebruiken van een pseudoniem.</p>
+
+      <ul>
+        <li>U kan een andere vorm of afkorting van uw eigen naam gebruiken. "dhr. Arthur Thomas Roberts" kan zich bvb. "Arthur Roberts" noemen, of "M. Roberts", maar niet "Arthur" of "A.T.R.". </li>
+        <li>Vrouwen kunnen ook hun meisjesnaam gebruiken.</li>
+        <li>U kan mits toelating de naam van een bedrijf of VZW gebruiken.</li>
+        <li>U kan iemand anders vragen om het verzoek in zijn of haar naam in te dienen.</li>
+      </ul>
+
+      <p>Indien u geen andere mogelijkheid ziet kan u ons vragen om het verzoek in uw plaats in te dienen. In dat geval contacteert u ons en legt u uit waarom u het verzoek niet zelf of door uw naasten kan indienen. We kunnen dit vanzelfsprekend niet voor iedereen doen. Gebruik in geen geval de identiteit van iemand anders.</p>
+    </dd>
+
+    <dt id="full_address">Ze hebben mijn postadres gevraagd! <a href="#full_address">#</a> </dt>
+    <dd>
+      <p>De wetgeving op de openbaarheid van bestuur bepaalt dat de aanvragen schriftelijk moeten worden ingediend. De rechtspraak erkent e-mails als een rechtsgeldig geschrift dat kan gebruikt worden om toegang te krijgen tot informatie die wordt bijgehouden door overheidsinstanties. Vraag dus nadrukkelijk om per e-mail een antwoord te ontvangen.
+      </p>
+    </dd>
+
+    <dt id="postal_answer">De overheidsdienst heeft een postadres nodig om het antwoord met de post te verzenden. <a href="#postal_answer">#</a> </dt>
+    <dd>
+      <p>Indien een overheidsdienst enkel over een antwoord op uw vraag beschikt op papier dan kunnen ze uw postadres vragen. Begin eerst met hen ervan te overtuigen om het antwoord in te scannen. Indien dit niet werkt, en u uw postadres privé wil opgeven om de documenten te bekomen, dient u de optie ‘antwoord per post’ aan te vinken. U zal dans een e-mailadres ontvangen om het openbaar bestuur privé te contacteren.</p>
+    </dd>
+
+    <dt id="delete_requests">Kunnen jullie mijn verzoeken verwijderen, of mijn naam aanpassen? <a href="#delete_requests">#</a> </dt>
+    <dd>
+      <p>
+        <%= site_name %> is een permanent en publiek archief van verzoeken om openbaarheid van bestuur. Een vraag die voor u niet meer relevant lijkt, kan nog steeds nuttig zijn voor anderen. Daarom verwijderen we geen verzoeken.
+      </p>
+      <p>
+        In uitzonderlijke gevallen kunnen we uw naam of andere persoonlijke gegevens verwijderen of aanpassen, zie ook, (<a href="#takedown">volgende vraag</a>).
+      </p>
+      <p>
+        Indien dit u zorgen baart voor u uw verzoek om informatie doet, zie <a href="real_name">‘Kan ik een vraag om openbaarheid indienen onder een pseudoniem?’</a>.
+      </p>
+    </dd>
+
+    <dt id="takedown">Kunnen jullie mijn persoonlijke gegevens verwijderen? <a href="#takedown">#</a> </dt>
+
+    <dd>
+      <p>
+        Indien u persoonlijke info op de site terugvindt die u liever verwijderd of aangepast ziet, aarzel dan niet dit <a href="<%= help_contact_path %>">ons te laten weten</a>.
+      </p>
+
+      <p>
+        Indien het gevoelige informatie betreft die per ongeluk publiekelijk werd gedeeld, dan verwijderen we deze. Normaal gezien houden wij alleen rekening met verzoeken i.v.m. het verwijderen van eigen persoonlijke gegevens. Indien het gaat over gevoelige informatie, verzoeken wij elke gebruiker hier melding van te maken.
+      </p>
+
+      <p>
+        Wij zijn van mening dat het behoud van namen van ambtenaren en andere personeelsleden van de overheid van sterk openbaar belang is. We verwijderen enkel namen in uitzonderlijke omstandigheden, zoals wanneer de publicatie van een naam en functie een reële bedreiging vormt voor de veiligheid van een individu. Indien u zich in deze situatie bevindt, en u wenst uw naam verwijderd te zien omwille van dringende redenen, dient u een verzoekschrift in te dienen van uw hiërarchisch meerdere. Dit verzoek moet aantonen dat er een groter risico is dan het openbaar belang en dat de organisatie de naam (en functie) ook van hun eigen website verwijderd heeft.
+      </p>
+
+      <p>Het is voor ons niet eenvoudig om bepaalde types bijlagen te bewerken (zoals PDF, Word of Excel bestanden). In het algemeen zullen we dus de overheden verzoeken om ons de opgevraagde informatie in bewerkte vorm opnieuw toe te sturen. Om hierover meer te weten te komen kan u de <a href="<%= help_officers_path %>">FAQ voor overheden</a> raadplegen.</p>
+    </dd>
+
+  </dl>
+
+  <p>Verder: zie <a href="<%= help_officers_path %>">Vragen voor ambtenaren die instaan voor het naleven van de openbaarheid van overheidsinstellingen</a> --&gt;
+
+  <div id="hash_link_padding"></div>
+</div>
