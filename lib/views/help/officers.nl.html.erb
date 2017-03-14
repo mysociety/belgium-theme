@@ -1,0 +1,121 @@
+<% @title = "FAQ voor overheden" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip" class="left_column_flip">
+  <h1 id="officers">Vragen voor ambtenaren die instaan voor het naleven van de openbaarheid van overheidsinstellingen <a href="#officers">#</a> </h1>
+
+  <dl>
+
+    <dt id="top">Ik bekeek een aanvraag en kwam hier terecht. Hoezo? <a href="#top">#</a> </dt>
+    <dd>
+      <p><%= site_name %> is een initiatief van Anticor België. Het helpt burgers om bestuursdocumenten op te vragen en maakt de antwoorden op deze aanvragen toegankelijk voor iedereen.</p>
+
+      <p>De vraag om een bestuursdocument die u heeft ontvangen werd door een gebruiker van Transparencia ingediend. U kan de vraag beantwoorden zoals u elke andere vraag van een burger zou beantwoorden. Het enige verschil is dat uw antwoord automatisch zal worden gepubliceerd op het internet.
+      </p>
+
+      <p>Als u vragen heeft in verband met privacy of u heeft andere bezorgdheden, lees dan de informatie hieronder. U kan ook de andere pagina’s lezen om meer te weten over wat Transparencia doet. Op de site kan u eveneens de overheidsinstelling waarvoor u werkt opzoeken en bekijken welke andere bestuursdocumenten reeds werden opgevraagd via <%= site_name %>.</p>
+
+      <p>We staan open voor alle opmerkingen en bedenkingen van ambtenaren verantwoordelijk voor communicatie bij een overheidsinstelling. Aarzel niet om <a href="<%= help_contact_path %>">contact met ons</a> op te nemen.
+      </p>
+    </dd>
+
+    <dt id="responses">Waarom worden de antwoorden op aanvragen van bestuursdocumenten gepubliceerd? <a href="#responses">#</a> </dt>
+    <dd>
+      Wij denken dat er veel voordelen zijn verbonden aan publicatie. Het zal burgers aanzetten om meer interesse en betrokken te zijn bij het werk van de overheid en overheidsinstellingen. We hopen ook dat door publicatie er minder vaak dezelfde vragen zullen worden ingediend. Aangezien het hier gaat om informatie met betrekking tot de openbare dienstverlening die iedereen kan opvragen bij een overheidsinstelling, zien we geen enkele reden om deze niet te publiceren.
+    </dd>
+
+    <dt id="realpeople">Zijn de mensen die aanvragen opstellen echte personen? <a href="#realpeople">#</a> </dt>
+    <dd>
+      Ja. Om de antwoorden op aanvragen te kunnen opvolgen gebruiken we weliswaar door de computer gegenereerde e-mail adressen voor elke aanvraag, maar vooraleer een gebruiker een aanvraag kan indienen, dient hij of zij zich te registeren op de website met een uniek e-mailadres dat werd geverifieerd.<br>
+      Op de website van Transparencia vindt u een overzicht van alle aanvragen die een gebruiker heeft ingediend.
+    </dd>
+
+    <dt id="email_only">Het sturen van een e-mail is niet voldoende om een bestuursdocument op te vragen <a href="#email_only">#</a> </dt>
+    <dd>
+      Toch wel. De wetgeving over de openbaarheid van bestuur voorziet dat aanvragen schriftelijk moeten worden ingediend, maar de jurisprudentie erkent e-mail als een geldig middel om bestuursdocumenten op te vragen bij overheidsinstellingen.
+    </dd>
+
+    <dt id="vexatious">Vindt u niet dat er veel hinderlijke verzoeken worden ingediend? <a href="#vexatious">#</a> </dt>
+    <dd>
+      <p><%= site_name %> dient geen verzoeken in. We verzenden verzoeken op vraag van de gebruikers van de website. Dit zijn allen echte burgers.</p>
+
+      <p>
+        Bekijk het zo: indien verschillende mensen verzoeken zouden indienen door gebruik te maken van een Hotmail-adres, gaat u Microsoft niet beschuldigen van het indienen van hinderlijke verzoeken. Bij Transparencia werkt het op dezelfde manier. Bovendien kunt u makkelijk nakijken of één van onze gebruikers hinderlijke verzoeken indient aangezien alle aanvragen openbaar zijn.
+      </p>
+    </dd>
+
+    <dt id="spam_problems">Er staat een verzoek op <%= site_name %> waarover wij nooit een e-mail ontvangen hebben <a href="#spam_problems">#</a> </dt>
+    <dd>
+      <p>
+        Wanneer een verzoek op de website verschijnt, hebben wij getracht om dit door te sturen naar de overheidsinstelling. Alle foutmeldingen (“delivery failure” e.d.) verschijnen automatisch op de website. U kan het e-mailadres dat gebruikt wordt controleren via de link “Bekijk het e-mailadres voor een informatie-aanvraag” op de pagina van de overheidsinstelling. Gelieve ons te <a
+        href="<%= help_contact_path %>">contacteren</a> indien dit adres niet klopt en we een ander e-mailadres moeten gebruiken.
+      </p>
+
+      <p>
+        Soms wordt een verzoek tegengehouden door een anti-spam filter. U kan de IT-afdeling vragen om e-mails afkomstig van het domein <strong>@<%= AlaveteliConfiguration::incoming_email_domain %></strong> toe te laten. <a href="<%= help_contact_path %>">Op uw vraag</a> kunnen we alle aanvragen die reeds werden gedaan doorgeven en/of technische details geven in verband met foutmeldingen zodat uw IT-afdeling het probleem kan aanpakken.
+      </p>
+
+      <p>
+        U kan op elk verzoek antwoorden in uw browser te gebruiken zonder gebruik van een e-mailprogramma. Doe dit via de link “een aanvraag beantwoorden” onderaan elke pagina van een verzoek.
+      </p>
+    </dd>
+
+    <dt id="days">Hoe wordt de deadline die op een verzoekpagina staat berekend? <a href="#days">#</a> </dt>
+    <dd>
+      <p>
+        Gelieve eerst het antwoord op de voorgaande vraag te lezen.
+      </p>
+
+      <p>
+        Wettelijk gezien dient een overheidsdienst snel te antwoorden op een informatieaanvraag. Als ze er niet in slagen dit te doen binnen de termijn, leggen ze best uit waardoor het niet mogelijk om binnen de vooropgestelde termijn het antwoord te bezorgen.
+      </p>
+
+      <p>
+        Transparencia publiceert de maximale termijn voorzien door de wetgeving om een aanvraag te beantwoorden. Indien de overheidsdienst bijkomende informatie vraagt, worden de aanvragers gevraagd om het moment door te geven waarop ze hun aanvraag hebben verduidelijkt. Dit moment wordt dan gebruikt om de termijn opnieuw te berekenen. Als u problemen ondervindt met een bepaalde aanvraag, gelieve ons dan te contacteren zodat we indien nodig correcties kunnen aanbrengen.
+      </p>
+
+      <p>
+        De berekende datum verschijnt bij de aanvragen op de volgende manier: “Momenteel in afwachting van een antwoord van XXX, moet de overheidsinstelling snel antwoorden en normaal ten laatste op XXX”.
+      </p>
+    </dd>
+
+    <dt id="large_file">Hoe kan ik een bestand versturen dat te groot is om per e-mail te verzenden?  <a href="#large_file">#</a> </dt>
+    <dd>
+      In plaats van per e-mail te anwoorden kan u ook via uw browser antwoorden en bestanden uploaden. Om dit te doen moet u kiezen voor de link 'beantwoorden verzoek' onderaan elke verzoekpagina. <a href="<%= help_contact_path %>">Contacteer ons</a> indien ook daar de limiet wordt overschreden (50 Mb).
+    </dd>
+
+    <dt id="names">Waarom publiceert u de namen van ambtenaren en de tekst van e-mails? <a href="#names">#</a> </dt>
+    <dd>
+      We zijn de mening toegedaan dat wat ambtenaren communiceren in het kader van hun taak informatie van openbaar nut is. We zullen enkel informatie weghalen van de website in uitzonderlijke situaties (zie verder: “<a href="<%= help_privacy_path(:anchor => 'takedown') %>">Kunnen jullie mijn persoonlijke gegevens verwijderen?</a>”.
+    </dd>
+
+    <dt id="mobiles">Publiceert u ook e-mailadressen en telefoonnummers? <a href="#mobiles">#</a> </dt>
+    <dd>
+      <p>
+        Om spam te vermijden halen we automatisch de meeste e-mailadressen en mobiele telefoonnummers weg uit antwoorden op verzoeken. U kan ons contacteren indien dit niet gebeurd is voor een bepaald telefoonnummer of e-mailadres. Om technische redenen kunnen we nummers en adressen niet altijd weghalen uit bepaalde bijlagen zoals in het geval van PDF-bestanden.
+      </p>
+
+      <p>
+        Indien u een weggehaald e-mailadres zou willen kennen, kan u <a
+        href="<%= help_contact_path %>">contact</a> met ons opnemen. Soms maakt een e-mailadres een belangrijk deel uit van een antwoord en zullen wij dit e-mailadres dan ook weergeven, maar dan in een verborgen commentaar.
+      </p>
+    </dd>
+
+    <dt id="copyright"><a id="commercial"></a>Wat is jullie beleid rond copyright/auteursrechten? <a href="#copyright">#</a> </dt>
+    <dd>
+      <p>
+        De wetgeving rond de openbaarheid van bestuur stelt dat het niet relevant is wie een verzoek indient. Elke persoon kan een verzoek indienen en hierop een antwoord krijgen.
+      </p>
+
+      <p>
+        Indien u toch van mening bent dat publicatie op het het internet van dit document tot een probleem met copyright/auteursrechten zou leiden kan u met ons <a href="<%= help_contact_path %>">contact</a> opnemen en vragen om dit document van de site te verwijderen. We vragen echter om dit tot een minimum te beperken gezien wij trachten onze middelen spaarzaam te gebruiken en te vermijden dat verschillende keren hetzelfde verzoek wordt gestuurd naar overheidsinstellingen, maar ook om de relatie met de burger optimaal te houden.
+      </p>
+    </dd>
+
+  </dl>
+
+  <p>Als u de <a href="<%= help_about_path %>">inleiding</a> nog niet geeft gelezen, doe dit dan eerst --&gt;</p>
+
+  <div id="hash_link_padding"></div>
+</div>
