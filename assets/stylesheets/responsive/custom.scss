@@ -15,11 +15,12 @@
     color: $color_white;
   }
   transition: background-color 0.5s ease-out;
-  &:hover{
+  &:hover,
+  &:active,
+  &:focus {
     background-color: darken($color_primary, 15%);
     color: $color_white;
   }
-
 }
 
 /* Selected menu item */
@@ -27,8 +28,10 @@
   font-weight: bold;
   color: $color_primary;
   background-color: $color_neutral_light;
-  &:hover{
-      background-color: $color_neutral_light;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color_neutral_light;
   }
 }
 
@@ -43,10 +46,7 @@ body{
 }
 
 a {
-  &:link,
-  &:visited {
-    color: $link-color;
-  }
+  color: $link-color;
   &:hover,
   &:active,
   &:focus {
@@ -245,28 +245,17 @@ a.link_button_green_large {
   }
 }
 
-#navigation{
+.navigation{
   border-bottom: none;
   a {
     @extend %menu-item;
+    @media( min-width: $main_menu-mobile_menu_cutoff ) {
+      padding: 0.875em 1em;
+    }
   }
   /* Show which section is currently selected */
   li.selected a{
     @extend %selected-menu-item;
-  }
-
-  /* Vertically align the search box */
-  #navigation_search{
-    input{
-      margin-top:0.313em;
-      margin-bottom:0.313em;
-      height: 1.875em;
-      @include ie8 {
-        height: 33px;
-        font-size: 1.1em;
-        padding: 0;
-      }
-    }
   }
 
   /* Vertically align the label image for older IE*/
@@ -275,14 +264,63 @@ a.link_button_green_large {
       margin-top: 0.626em;
     }
   }
+}
 
-  #navigation_search_button{
-    background-color: $color_white;
-    border: none;
-    transition: all 0.3s ease-out;
-    color: $color_primary;
-    border-radius: 0;
-    font-size: inherit;
+/* Vertically align the search box */
+#navigation_search{
+  input{
+    margin-top:0.313em;
+    margin-bottom:0.313em;
+    height: 1.875em;
+    @include ie8 {
+      height: 33px;
+      font-size: 1.1em;
+      padding: 0;
+    }
+  }
+}
+
+#navigation_search_button{
+  background-color: $color_white;
+  border: none;
+  transition: all 0.3s ease-out;
+  color: $color_primary;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+.js-loaded {
+  .account-link {
+    padding-right: 2em;
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      //make it appear like it's aligned with the grid, even though it isn't
+      margin-right: 0.935em;
+      &:after {
+        top: 2em;
+        right: 3em;
+      }
+    }
+  }
+}
+
+.no-js {
+  .navigation .logged-in-menu a,
+  .navigation .logged-in-menu__signout-link a {
+    @extend %menu-item;
+  }
+}
+
+.js-loaded {
+  .navigation .logged-in-menu__signout-link a {
+    @include respond-min( $main_menu-mobile_menu_cutoff ){
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.8em;
+      color: #888;
+      &:hover {
+        color: #888;
+      }
+    }
   }
 }
 
@@ -326,29 +364,25 @@ a.link_button_green_large {
   border-color: $action-color;
 }
 
-/* Logged and local options act like submenus */
-#logged_in_bar{
-  @include respond-min($main_menu-mobile_menu_cutoff) {
-    top: 0;
-  }
-
-  a {
-    @extend %menu-item;
+.navigation .logged-in-menu a,
+.navigation .logged-in-menu__signout-link a {
+  @include respond-min( $main_menu-mobile_menu_cutoff ) {
+    color: $link-color;
     background-color: transparent;
-    font-weight: normal;
-    color: $color_white;
+    text-decoration: none;
     &:hover,
     &:active,
     &:focus {
-      background-color: transparent;
+      text-decoration: underline;
     }
   }
-  #logged_in_links {
-    a {
-      font-weight: normal;
-    }
+
+  .logged-in-menu a,
+  .logged-in-menu__signout-link a {
+    color: $link-color;
   }
 }
+
 
 /* LANGUAGE SWITCHER */
 #user_locale_switcher {
