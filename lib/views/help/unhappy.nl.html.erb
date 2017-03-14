@@ -1,0 +1,93 @@
+<% @title = "Niet tevreden over het antwoord dat u kreeg?" %>
+
+
+<% if @info_request %>
+  <h1>
+    Ontevreden over het verkregen antwoord op je vraag
+    '<%= request_link(@info_request) %>'?
+  </h1>
+<% else %>
+  <h1><%= @title %></h1>
+<% end %>
+
+<p>Indien …</p>
+
+<ul>
+  <li>U geen antwoord kreeg binnen de 30 dagen</li>
+  <li>U niet alle informatie kreeg die u vroeg of</li>
+  <li>Uw vraag is geweigerd maar zonder geldige, wettelijke reden</li>
+</ul>
+
+<p>… kan u</p>
+
+<ol>
+  <li>Een verzoek tot heroverweging indienen bij het openbaar bestuur</li>
+  <li>Tegelijkertijd een vraag om advies indienen bij de Commissie voor toegang tot bestuursdocumenten (CTB) voor de overheidsinstellingen die onderworpen zijn aan de wetgeving van openbaarheid van bestuur</li>
+  <li>Andere manieren gebruiken om een antwoord te bekomen</li>
+</ol>
+
+<h1 id="internal_review">1.  Een verzoek tot heroverweging sturen <a class="hover_a" href="#internal_review">#</a> </h1>
+
+<p>
+  <% if @info_request %>
+    <%= link_to "Demander une reconsidération", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> en schrijf dan een boodschap aan de overheid om je vraag te bekijken.
+  <% else %>
+    Kies onderaan de verzoekpagina op Transparencia voor “Een heroverweging vragen”. Schrijf vervolgens een bericht naar de overheidsinstelling om uw verzoek opnieuw te overwegen. Vergeet hierbij niet om een link op te nemen naar de verzoekpagina op Transparencia zodat wij weten over welk verzoek het gaat.
+  <% end %>
+</p>
+
+<h1 id="complaining">2.  Vraag om advies aan de Commissie voor toegang tot bestuursdocumenten (CTB) <a class="hover_a" href="#complaining">#</a> </h1>
+
+<p>
+  Aan de overheidsinstellingen onderworpen aan de wetgeving openbaarheid van bestuur kunt u vragen aan de Commissie voor toegang tot bestuursdocumenten (CTB) om een advies over uw verzoek uit te brengen. Opgelet: een adviesaanvraag aan de CTB moet <strong>ABSOLUUT</strong> verstuurd worden op dezelfde dag dat het verzoek tot heroverweging wordt verstuurd naar de overheidsinstelling.
+</p>
+
+<p>
+  Transparencia werd (nog) niet ontworpen met het oog op het versturen van adviesaanvragen aan de CTB. Deze aanvragen dienen direct naar de CTB verstuurd te worden (per mail of per post).
+</p>
+
+<p>
+  Bezorg aan de CTB de link naar uw verzoek op de Transparencia-site of druk deze pagina af zodat de CTB toegang heeft tot al uw uitwisselingen met de overheidsinstelling.
+</p>
+
+<p>
+  Vergeet niet ons op de hoogte te houden van de evolutie van uw aanvraag aan de CTB door een commentaar te posten op de pagina van uw verzoek.
+</p>
+
+<p>
+  Indien uw verzoek tot herziening van maatschappelijk belang is (= belangrijk voor andere personen buiten uzelf), kan u ons om advies vragen om uw verzoek aan de Commissie (CTB) eventueel te verbeteren. Indien we tijd hebben, werken we hier graag aan mee. Stuur daarvoor een mail naar <%= mail_to 'info@transparencia.be' %>.
+</p>
+
+<p>
+  Voor meer informatie bekijk het thema “<%= link_to 'Saisir la CADA', help_cada_path %>”.
+</p>
+
+<h1 id="other_means">3. Andere manieren om een antwoord te bekomen <a class="hover_a" href="#other_means">#</a> </h1>
+
+<p>
+  Er zijn ook andere manieren waarop u kunt proberen een antwoord op uw verzoek te bekomen.
+</p>
+
+<ul>
+  <li>
+    Doe een nieuwe informatieaanvraag waarbij u de informatie aangepast aan de motieven voor de weigering die de overheidsinstelling heeft geformuleerd.
+  </li>
+  <li>
+    Als een andere overheidsinstelling erbij betrokken is of in het bezit is van de gezochte informatie, kan u ook naar deze overheidsinstelling een verzoek richten.
+  </li>
+  <li>
+    Schrijf naar een volksvertegenwoordiger (gemeenteraadslid, parlementslid) of een andere politicus en vraag om hulp bij het vinden van het antwoord op uw vraag. Volksvertegenwoordigers kunnen verzoeken doen aan overheidsinstellingen en parlementaire vragen stellen. Gemeenteraadsleden kunnen in de gemeenteraad vragen stellen en een document opvragen binnen de 10 dagen.
+  </li>
+  <% if can_ask_the_eu?(@country_code) %>
+    <li>
+      U kan misschien ook uw verzoek richten aan de Europese Unie, afhankelijk van de aard van uw verzoek.
+      <%= link_to 'AskTheEU', 'https://www.asktheeu.org/' %> is een website gelijkaardig aan Transparencia voor informatieaanvragen aan de Europese Unie.
+    </li>
+  <% end %>
+  <li>
+    Vraag hulp aan anderen die geïnteresseerd zijn of zouden kunnen zijn door een gelijkaardig verzoek. U vindt hen bijvoorbeeld door te navigeren door vroegere verzoeken gedaan via Transparencia. U kan met een geregistreerde gebruiker communiceren d.m.v. zijn persoonlijke pagina.
+  </li>
+  <li>
+    U kan eventueel een werkgroep(je) vormen en een overleg met de bevoegde overheidsinstelling organiseren.
+  </li>
+</ul>
