@@ -1,0 +1,158 @@
+<% @title = "Een verzoek indienen" %>
+
+<%= render :partial => 'sidebar' %>
+<div id="left_column_flip" class="left_column_flip">
+  <h1 id="making_requests"><%= @title %> <a href="#making_requests">#</a></h1>
+  <dl>
+
+    <dt id="which_authority">Ik ben niet zeker welke overheidsdienst ik moet aanschrijven. Hoe kies ik de juiste instelling? <a href="#which_authority">#</a> </dt>
+
+    <dd>
+      <p>Het kan moeilijk zijn om de ingewikkelde structuren van de overheid te ontrafelen en te weten te komen welke overheidsdienst de informatie beheert die u nodig heeft. Hieronder staan enkele nuttige tips:
+      </p>
+      <ul>
+        <li>Zoek op <%= site_name %> naar gelijkaardige verzoeken.</li>
+        <li>Wanneer u een overheidsdienst heeft gevonden waarvan u denkt dat ze de inlichtingen bezit die u nodig heeft, klik dan op de knop ‘home page’ aan de rechterzijde van hun pagina om op hun website na te gaan wat ze precies doen.</li>
+        <li>Contacteer de overheidsdienst door te bellen of te e-mailen en vraag naar de informatie die u zoekt.</li>
+        <li>Wees niet te bezorgd over het vinden van de juiste overheidsdienst. Indien u zich vergist zal die overheidsdienst u misschien doorverwijzen naar de juiste dienst.</li>
+        <li>Indien het om een moeilijk geval gaat kan u ons steeds <a href="<%= help_contact_path %>">contacteren</a> voor hulp.</li>
+      </ul>
+
+    </dd>
+
+
+
+    <dt id="missing_body">U vindt de overheidsdienst die u wil aanschrijven niet terug in de lijst. <a href="#missing_body">#</a> </dt>
+
+    <dd>
+      <p>Neem <a href="<%= new_change_request_path %>">contact</a> met ons op en geef ons de naam van de ontbrekende overheidsdienst, samen met hun e-mailadres voor verzoeken inzake openbaarheid van bestuur - indien u dat kan terugvinden.<br>
+      Uw hulp om onze lijst met overheidsinstellingen te vervolledigen is altijd welkom.
+      </p>
+    </dd>
+
+    <dt id="authorities">Waarom lijst u organisaties op die niet onderworpen zijn aan de wet op de openbaarheid van bestuur? <a href="#authorities">#</a> </dt>
+
+    <dd>
+      <p><%= site_name %> laat u toe om bij een hele reeks organisaties verzoeken om informatie in te dienen:</p>
+
+      <ul>
+        <li>Organisaties die formeel onderworpen zijn aan de openbaarheid van bestuur.</li>
+        <li>Organisaties die vrijwillig meedoen aan de openbaarheid van bestuur.</li>
+        <li>Organisaties die niet zijn onderworpen aan de openbaarheid van bestuur, maar waarvan wij vinden dat ze dit wel zouden moeten zijn aangezien zij volgens ons een bepaald openbaar gezag uitstralen, en de burger daarom een zekere vorm van transparantie verschuldigd zijn.
+        </li>
+      </ul>
+
+      <p>In dit laatste geval ijveren we voor een uitbreiding van de wet betreffende de openbaarheid van bestuur. Zelfs indien een organisatie niet wettelijk verplicht is tot openbaarheid van bestuur kan zij de principes ervan steeds op vrijwillige basis toepassen.
+      </p>
+
+    </dd>
+
+    <dt id="focused">Waarom moet mijn verzoek doelgericht blijven? <a href="#focused">#</a> </dt>
+
+    <dd>
+
+      <p>
+        Neem in uw verzoek enkel de elementen op die noodzakelijk zijn om begrijpen welke informatie u nodig heeft. Absoluut te vermijden zijn volgende zaken:
+      </p>
+
+      <ol>
+        <li>Informatie of argumenten betreffende een specifiek of persoonlijk probleem.</li>
+        <li>Uw persoonlijke contactgegevens, aangezien uw verzoek zal gepubliceerd worden op Transparencia.</li>
+        <li>Verklaringen die anderen kunnen kwetsen of beledigen.</li>
+      </ol>
+
+      <p>
+        Indien u dit wel doet zullen we uw verzoek om informatie moeten verwijderen om juridische problemen te vermijden.
+      </p>
+
+      <p>
+        Korte duidelijke boodschappen maken het voor overheidsdiensten makkelijker u snel en efficiënt te helpen.
+      <p>
+        Indien u een verzoek indient via Transparencia om een blog of een artikel te schrijven, kan u in uw artikel een link opnemen naar uw verzoek op Transparencia? Dit zal helpen Transparencia bekend te maken onder de burgers.
+      </p>
+
+    </dd>
+
+    <dt id="fees">Wat kost het me om een verzoek in te dienen? <a href="#fees">#</a> </dt>
+
+    <dd>
+      <p>
+        Een verzoek tot openbaarheid van bestuur maken is haast altijd gratis (vraag de informatie in digitale vorm op).<br>
+        In sommige gevallen kunnen overheidsdiensten een vergoeding vragen om de kosten te dekken van de fotokopies, indien de gevraagde documenten absoluut op papier moeten worden overgedragen. De meeste documenten kunnen echter elektronisch worden verstuurd door gewoonweg te antwoorden op de e-mail van Transparencia.
+      </p>
+    </dd>
+
+    <dt id="quickly_response">Hoe snel krijg ik een antwoord? <a href="#quickly_response">#</a> </dt>
+
+    <dd>
+      <p>
+        De wet verplicht overheidsdiensten om te antwoorden binnen een termijn van 30 dagen. Binnen deze termijn kan de overheidsdienst een verlenging van 15 dagen vragen (indien ze kan aantonen dat de overdracht van de informatie meer tijd in beslag neemt).<br>
+        Transparencia zal u e-mailen indien u geen tijdig antwoord kreeg binnen de wettelijke termijn.
+      </p>
+    </dd>
+
+    <dt id="no_response">Wat kan ik doen als mijn vraag onbeantwoord is gebleven? <a href="#no_response">#</a> </dt>
+
+    <dd>
+      <p>Er zijn verschillende mogelijkheden indien u geen antwoord kreeg op uw vraag.</p>
+      <ul>
+        <li>In sommige gevallen kan er zich een technisch probleem hebben voorgedaan, en heeft de betrokken overheidsdienst uw verzoek nooit ontvangen. U kan de overheidsdienst dan bellen en vragen of ze uw verzoek per e-mail hebben ontvangen.
+        </li>
+        <li>Indien de overheid uw verzoek niet heeft ontvangen, heeft dit wellicht te maken met "spam filters". Verwijs de overheidsdienst naar de pagina <strong>“<a href="<%= help_officers_path(:anchor => 'spam_problems') %>">Er staat een verzoek op <%= site_name %> waarover wij nooit een e-mail ontvangen hebben</a>”</strong> in die rubriek <strong>“<a href="<%= help_officers_path %>">FAQ voor overheden</a>”</strong>.
+        </li>
+        <li>Indien de overheid weigert te antwoorden of als ze niet antwoord binnen de wettelijke termijn kan u hen een verzoek tot heroverweging overmaken. Wat betreft de overheden die onderworpen zijn aan de wet betreffende de openbaarheid van bestuur kan u tevens een advies vragen aan de Commissie voor Toegang tot Bestuursdocumenten (CTB). In dat geval dient u zowel het advies van de CTB als het verzoek tot heroverweging op dezelfde dag in te dienen.
+      </ul>
+      <p>Voor meer informatie, lees onze pagina “<a href="<%= help_general_path(:action => 'unhappy') %>">Niet tevreden over het antwoord dat u kreeg?</a>”.</p>
+    </dd>
+
+    <dt id="not_satifised">Wat als ik niet tevreden ben over het antwoord dat ik kreeg? <a href="#not_satifised">#</a> </dt>
+    <dd>Indien u niet de informatie kreeg waarnaar u vroeg of deze niet tijdig heeft ontvangen lees dan onze pagina “<a href="<%= help_general_path(:action => 'unhappy') %>">iet tevreden over het antwoord dat u kreeg?</a>”.
+    </dd>
+
+    <dt id="reuse">Ik kreeg een verbod op het gebruiken van de informatie die ik verkreeg! <a href="#reuse">#</a> </dt>
+    <dd>
+      <p>Overheidsdienten stellen soms dat u de informatie die u verkreeg niet mag gebruiken of publiceren. U mag uiteraard over de verkregen informatie schrijven of deze samenvatten of citeren. We zijn van mening dat u deze verkregen informatie ook volledig mag publiceren ook al wordt u dit verboden. Bekijk ons <a href="<%= help_privacy_path %>">beleid op copyright</a>.</p>
+    </dd>
+
+    <dt id="data_protection">Kan ik een verzoek om informatie indienen over mezelf? <a href="#data_protection">#</a> </dt>
+
+    <dd>
+      <p>
+        Nee, Verzoeken om informatie ingediend bij Transparancia zijn openbaar  en handelen over openbaarheid van bestuur. Wij kunnen u niet helpen met informatie over een privaat persoon.<br>
+        Indien u wil weten welke informatie een overheidsdienst over uzelf bezit moet u hen direct aanschrijven zonder te passeren via Transparencia. Indien u merkt dat iemand (misschien achteloos) privégegevens over u heeft gebruikt in een verzoek om informatie contacteer ons dans zodat we dit kunnen aanpassen. Door de automatische publicatie van antwoorden op de website kan Transparencia niet gebruikt worden voor het aanvragen van documenten die onderwerpen zijn aan auteursrechten.</p>
+    </dd>
+
+
+    <dt id="private_requests">Ik wil mijn verzoek om informatie geheim houden  (ten minste tot ik mijn artikel heb gepubliceerd) <a href="#private_requests">#</a> </dt>
+
+    <dd><p><%= site_name %> is op dit ogenblik enkel voorzien op openbare verzoeken om informatie. Indien u  een journalist bent  en uw verzoek gedurende een bepaalde termijn geheim wil houden, contacteer ons dan via <a href="mailto:info@transparencia.be">info@transparencia.be</a>. Alle antwoorden die we verkrijgen worden automatisch gepubliceerd op de website. Indien u uw verzoek privaat wil houden moet u de betrokken overheidsdienst zelf rechtstreeks aanschrijven.
+      </p>
+    </dd>
+
+    <dt id="multiple">Kan ik eenzelfde verzoek naar verschillende overheidsdiensten sturen, bvb. naar alle gemeentebesturen? <a href="#multiple">#</a> </dt>
+
+    <dd><p>We raden u aan om eerst een ‘testverzoek’ te richten tot een beperkt aantal overheden. Hun antwoorden zullen u in staat stellen om uw verzoek om informatie eventueel beter te verwoorden zodat u betere antwoorden krijgt wanneer u het verzoek naar meerdere diensten stuurt. Er is op dit ogenblik geen automatisch systeem om een verzoek naar alle opgelijste overheidsdiensten te sturen. U moet uw aanvragen dan manueel kopiëren en plakken.</p>
+    </dd>
+
+    <dt id="offsite">Ik heb een verzoek ingediend buiten de website om en wil deze overzetten naar het archief. Is dit mogelijk? <a href="#offsite">#</a> </dt>
+
+    <dd>
+      <p>
+        <%= site_name %> is een archief van verzoeken om informatie ingediend doorheen deze website en wil geen overzicht bieden van alle verzoeken in het kader van openbaarheid van bestuur.<br>
+        Het is niet mogelijk om verzoeken die ingediend werden via een andere weg over te zetten naar het archief. Eén van de redenen daarvoor is dat het in zo’n geval niet mogelijk is om na te gaan of het opgegeven antwoord weldegelijk van de overheidsdienst komt. U kan wel steeds uw verzoek opnieuw indienen via Transparencia indien u het antwoord gepubliceerd wil zien.
+      </p>
+    </dd>
+
+    <dt id="moderation">Hoe modereert u annotaties/commentaren bij verzoeken om informatie? <a href="#moderation">#</a> </dt>
+
+    <dd>
+      <p>Annotaties op Transparencia dienen om mensen te helpen bij het bekomen van de juiste informatie  en we verlenen ons dan ook het recht om alle annotaties te verwijderen die hier geen verband mee houden. Politieke discussies zijn niet toegestaan.
+      </p>
+    <dd>
+
+  </dl>
+
+  <p>Verder: lees over <a href="<%= help_cada_path %>">De CTB vatten</a> --&gt;
+
+  <div id="hash_link_padding"></div>
+</div>

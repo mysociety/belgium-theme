@@ -1,0 +1,53 @@
+<% @title = "Inleiding tot Transparencia" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip" class="left_column_flip">
+  <h1 id="introduction">Inleiding tot <%= site_name %> <a href="#introduction">#</a></h1>
+  <dl>
+
+    <dt id="purpose">Waarom <%= site_name %>? <a href="#purpose">#</a> </dt>
+    <dd><%= site_name %> is een platform dat u helpt informatie te bemachtigen over wat uw overheid aan het doen is. Met overheid bedoelen we: gemeentes, OCMW’s, sociale woningsmaatschappijen, ministeriële kabinetten, Ministeries, intercommunales, …
+    </dd>
+
+    <dt id="premise">Hoe werkt de site? <a href="#premise">#</a> </dt>
+    <dd>Vooreerst kiest u de openbare instelling waarvan u informatie wil bemachtigen, en beschrijft u wat u precies wil weten. Daarna zenden wij uw verzoek (vraag) naar de bevoegde instantie. U krijgt een e-mail van zodra de overheidsdienst antwoordt of wanneer de antwoordtermijn van 30 dagen is verstreken. Elk antwoord wordt automatisch gepubliceerd op deze website zodat u, of wie dan ook, deze informatie kan vinden en lezen.
+    </dd>
+
+    <dt id="whybother_me">Waarom zou ik dit doen? <a href="#whybother_me">#</a> </dt>
+    <dd>U betaalt belastingendie  de overheid gebruikt voor allerlei doeleinden. Deze handelingen beïnvloeden uw dagelijks leven, van gezondheidszorg tot defensie. Soms worden erg lovenswaardige projecten gerealiseerd, andere kunnen dan weer beter. Hoe meer we ontdekken over hoe onze overheden werken, hoe meer suggesties de burger kan doen om het beleid van de overheid bij te sturen, en hoe meer feedback de burger kan geven over wat goed werd aangepakt. De democratie zal er wel bij varen, dankzij uw waakzame opmerkzaamheid.
+    </dd>
+
+    <dt id="whybother_them">Waarom zou een overheidsinstantie de moeite nemen om te antwoorden? <a href="#whybother_them">#</a> </dt>
+    <dd>Volgens de wet op de Openbaarheid van bestuur hebben overheden de verplichting om de meeste van uw vragen te beantwoorden. Het antwoord zal ofwel de informatie bevatten die u nodig heeft, ofwel de redenen uiteenzetten waarom de overheid de gevraagde informatie niet wil of kan publiek maken.
+    </dd>
+
+    <dt id="who">Wie beheert <%= site_name %>? <a href="#who">#</a> </dt>
+    <dd><%= site_name %> is een project van <a href="https://www.anticor.be/">Anticor België</a> in samenwerking met <a href="http://alaveteli.org">Alaveteli</a>, die werd opgericht en beheerd wordt door <a href="http://www.mysociety.org">mySociety</a>. mySociety is een project van de vereniging <a href="http://www.ukcod.org.uk/UK_Citizens_Online_Democracy">UK Citizens Online Democracy</a>. Indien u ons werk nuttig vindt, kan u <a href="https://secure.mysociety.org/donate/">hier</a> een gift doen.
+    <br><br>
+    U kan de werking van Anticor België ook steunen door een gift te doen op rekeningnummer BE75 0017 9318 5951 - BIC: GEBABEBB op naam van Anticor België. Dit geld zal dienen om de werkingskosten te dekken van het project "transparentie" van Anticor België.
+    </dd>
+
+    <dt id="reporting">Wat te doen bij een vraag die ongepast lijkt? <a href="#reporting"#</a>#</a> </dt>
+    <dd>Vragen naar persoonlijke informatie of ergerlijke verzoeken zijn niet toegestaan via de wet van openbaarheid van bestuur.<br>
+    Als u denkt dat een vraag ongepast is, kan u dit signaleren aan de beheerders van de website.
+    </dd>
+
+    <dt id="reporting_unavailable">Waarom is het niet mogelijk om bepaalde vragen door te geven? <a href="#reporting_unavailable">#</a> </dt>
+    <dd>Als een aanvraag al eerder werd doorgegeven aan de beheerders van de website, is het niet meer mogelijk deze een tweede keer door te geven – dit is om te vermijden dat de beheerders meerdere meldingen krijgen voor het zelfde probleem, nog voordat ze de kans hebben gekregen dit te onderzoeken.
+    <br><br>
+    Indien de beheerders er voor hebben gekozen om een vraag zichtbaar te laten die eerder als ongepast werd geïdentificeerd, kan u het formulier in de sidebar gebruiken  om een beheerder te contacteren, indien u denkt at de vraag toch verborgen moet worden.
+    </dd>
+
+    <dt id="updates">Hoe blijf ik op de hoogte van het werk van <%= site_name %>?<a href="#updates">#</a> </dt>
+    <dd>We hebben een <a href=https://twitter.com/<%= MySociety::Config.get('TWITTER_USERNAME', '') %>>twitteraccount</a> en een <a href=https://www.facebook.com/<%= MySociety::Config.get('FACEBOOK_USERNAME', '') %>>Facebookpagina</a>.
+    <br><br>
+
+    </dd>
+
+  </dl>
+
+  <p>Verder: meer weten over <a href="<%= help_requesting_path %>">hoe een verzoek in te dienen</a> --&gt;</p>
+
+  <div id="hash_link_padding"></div>
+</div>

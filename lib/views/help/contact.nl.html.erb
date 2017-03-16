@@ -1,0 +1,93 @@
+<% @title = "Contacteer ons" %>
+
+<%= foi_error_messages_for :contact %>
+
+<h1><%= @title %></h1>
+
+<div id="contact_preamble" class="contact_preamble">
+
+  <% if !flash[:notice] %>
+    <h2>Contacteer een openbaar bestuur voor de toegang tot informatie</h2>
+    <ul>
+      <li>Hier kan u een <a href="<%= new_request_path %>">informatieaanvraag indienen</a>. Die aanvraag wordt openbaar gemaakt.</li>
+
+      <li>
+        U wil informatie bekomen over uzelf?
+        Lees eerst onze pagina <a href="<%= help_requesting_path(:anchor => 'data_protection') %>">over dit onderwerp</a>.
+      </li>
+    </ul>
+  <% end %>
+
+  <h2>Contacteer het <%= site_name %>-team</h2>
+  <% if !flash[:notice] %>
+    <ul>
+      <li>
+        Lees eerst de <a href="<%= help_about_path %>">hulppagina’s</a>.
+      </li>
+
+      <li>U zal er veel antwoorden op uw vragen terugvinden.
+          We horen graag wat u van deze site denkt. U kan het formulier invullen of mailen naar
+          <a href="mailto:<%=@contact_email%>"><%=@contact_email%></a>.
+      </li>
+
+      <li>Wij zijn een van elk openbaar bestuur onafhankelijke vereniging.</li>
+    </ul>
+  <% end %>
+</div>
+
+<%= form_for :contact do |f| %>
+
+  <% if not @user %>
+    <p>
+      <label class="form_label" for="contact_name">Uw naam:</label>
+      <%= f.text_field :name, :size => 20 %>
+      (ou <%= link_to "of meld je aan", signin_path(:r => request.fullpath) %>)
+    </p>
+
+    <p>
+      <label class="form_label" for="contact_email">Uw mail:</label>
+      <%= f.text_field :email, :size => 20 %>
+    </p>
+  <% end %>
+
+  <p>
+    <label class="form_label" for="contact_subject">Onderwerp:</label>
+    <%= f.text_field :subject, :size => 50 %>
+  </p>
+
+  <p>
+    <label class="form_label" for="contact_message">Je bericht:</label>
+    <%= f.text_area :message, :rows => 10, :cols => 60 %>
+  </p>
+
+  <p style="display:none;">
+    <%= f.label :comment, 'Do not fill in this field' %>
+    <%= f.text_field :comment %>
+  </p>
+
+  <% if !@last_request.nil? %>
+    <p>
+      <label class="form_label" for="contact_message">Voeg een link toe aan je vraag:</label>
+      <%=request_link(@last_request) %>
+      <%= submit_tag "Verwijderen", :name => 'remove' %>
+    </p>
+  <% end %>
+  <% if !@last_body.nil? %>
+    <p>
+      <label class="form_label" for="contact_message">Voeg een link toe voor de overheidsinstantie:</label>
+      <%=public_body_link(@last_body) %>
+      <%= submit_tag "Verwijderen", :name => 'remove' %>
+    </p>
+  <% end %>
+
+  <p class="form_note">
+    Wij kunnen u <strong>enkel</strong> helpen met technische vragen over het gebruik van deze website of met algemene vragen over de toegang tot informatie.
+  </p>
+
+
+  <div class="form_button">
+    <%= hidden_field_tag(:submitted_contact_form, 1) %>
+    <%= submit_tag "Verstuur bericht aan #{ site_name }", :disable_with => "Verzenden..." %>
+  </div>
+
+<% end %>
