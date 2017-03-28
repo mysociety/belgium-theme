@@ -30,7 +30,7 @@
 
 <p>
   <% if @info_request %>
-    <%= link_to "Demander une reconsidération", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> and then write a message asking the authority to review your request.
+    <%= link_to "Demander une reconsidération", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> pour demander à l'autorité publique de reconsidérer votre demande.
   <% else %>
     En bas de la page de la demande sur <%= site_name %> choisissez "Demander
     une reconsidération". Ensuite, écrivez un message demandant à l’autorité de
