@@ -1,6 +1,8 @@
 <%= raw @outgoing_message.body.strip %>
 
 -------------------------------------------------------------------
+<% [:fr_BE, :nl_BE].each_with_index do |locale, i| %>
+  <% I18n.with_locale(locale) do %>
 
 <%= _('Please use this email address for all replies to this request:')%>
 <%= @info_request.incoming_email %>
@@ -14,5 +16,9 @@
 <%= new_change_request_url(:body => @info_request.public_body.url_name) %>
 
 <%= render :partial => 'followup_footer' %>
-
+  <% end %>
+  <% if i < 1 %>
+--------------
+  <% end %>
+<% end %>
 -------------------------------------------------------------------
