@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   # Additional help page example
   # match '/help/help_out' => 'help#help_out'
 
-  match '/help/conditions' => 'help#conditions', :as => 'help_conditions'
-  match '/help/cada' => 'help#cada', :as => 'help_cada'
+  get '/help/conditions' => 'help#conditions', :as => 'help_conditions'
+  get '/help/cada' => 'help#cada', :as => 'help_cada'
 end
