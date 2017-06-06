@@ -87,7 +87,8 @@
 
   <div class="form_button">
     <%= hidden_field_tag(:submitted_contact_form, 1) %>
-    <%= submit_tag "Envoyer votre message à #{ site_name }", :disable_with => "Envoi..." %>
+    <%= submit_tag "Envoyer votre message à #{ site_name }",
+                   :data => { :disable_with => "Envoi..." } %>
   </div>
 
 <% end %>
