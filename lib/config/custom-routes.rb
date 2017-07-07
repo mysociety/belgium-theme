@@ -8,4 +8,13 @@ Rails.application.routes.draw do
 
   get '/help/conditions' => 'help#conditions', :as => 'help_conditions'
   get '/help/cada' => 'help#cada', :as => 'help_cada'
+
+  scope '/profile' do
+    match '/change_postcode' => 'user#signchangepostcode',
+          :as => :signchangepostcode,
+          :via => [:get, :post]
+    match '/change_province' => 'user#signchangeprovince',
+          :as => :signchangeprovince,
+          :via => [:get, :post]
+  end
 end

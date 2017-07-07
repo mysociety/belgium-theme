@@ -1,0 +1,39 @@
+<% @title = _('Change your province on {{site_name}}',
+              :site_name => site_name) %>
+
+<% raise _('internal error') if not @user %>
+
+<div id="change_province">
+
+<%= form_tag({:action => "signchangeprovince"},
+             {:id => "signchangeprovince_form"}) do %>
+    <%= foi_error_messages_for :signchangeprovince %>
+
+    <div class="form_note">
+    <h1> <% _('Change your province used on {{site_name}}',
+              :site_name => site_name) %></h1>
+    </div>
+
+    <label class="form_label" for="signchangeprovince_province">
+      <%= _('New province:')%></label>
+    <%= select('signchangeprovince',
+               'province',
+               User.province_name_options,
+               {
+                 selected: @user.province,
+                 size: 20,
+                 allow_blank: true,
+                  include_blank: _('Please select the province you ' \
+                                   'live in (optional)')
+               }) %>
+    </p>
+
+    <p>
+    <div class="form_button">
+    <%= hidden_field_tag 'submitted_signchangeprovince_do', 1 %>
+    <%= submit_tag _("Change province on {{site_name}}",
+                     :site_name=>site_name) %>
+    </div>
+<% end %>
+
+</div>
