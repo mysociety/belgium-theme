@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # Add a callback - to be executed before each request in development,
 # and at startup in production - to patch existing app classes.
 # Doing so in init/environment.rb wouldn't work in development, since
@@ -14,4 +15,30 @@ Rails.configuration.to_prepare do
   #     "If you uncomment this line, this text will appear as default text in every message"
   #   end
   # end
+
+  User.class_eval do
+    def self.province_name_options
+      if FastGettext.locale == 'nl_BE'
+        [
+          'Antwerpen',
+          'Brussel',
+          'Limburg',
+          'Oost-Vlaanderen',
+          'West-Vlaanderen',
+          'Vlaams Brabant',
+          'Andere'
+        ]
+      else
+        [
+          'Brabant Wallon',
+          'Bruxelles',
+          'Hainaut',
+          'Liège',
+          'Luxembourg',
+          'Namur',
+          'Autre'
+        ]
+      end
+    end
+  end
 end
