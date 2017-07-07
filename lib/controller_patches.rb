@@ -26,4 +26,12 @@ Rails.configuration.to_prepare do
       @contact_email = AlaveteliConfiguration::contact_email
     end
   end
+
+  UserController.class_eval do
+    # Add our extra params to the sanitized list allowed at signup
+    def user_params(key = :user)
+      params.require(key).permit(:name, :email, :password,
+                                 :password_confirmation, :province, :postcode)
+    end
+  end
 end
