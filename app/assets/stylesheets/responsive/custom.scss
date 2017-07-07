@@ -824,6 +824,13 @@ a.correspondence__header__date:visited {
   }
 }
 
+/* Select drop-downs for province */
+select#user_signup_province {
+  font-size: 1.05em;
+  font-family: inherit;
+  height: 2.5em;
+}
+
 /* Help pages */
 
 dt {

@@ -28,6 +28,26 @@
     </div>
 
     <p>
+      <label class="form_label" for="user_signup_postcode">
+      <%= _('Your postcode (optional):') %></label>
+      <%= text_field 'user_signup',
+                     'postcode', { :size => 20, :tabindex => 21 } %>
+    </p>
+
+    <p>
+      <label class="form_label" for="user_signup_province">
+        <%= _('Your province:') %></label>
+        <%= select('user_signup',
+                   'province',
+                   User.province_name_options,
+                   {
+                     allow_blank: true,
+                     include_blank: _('Please select the province you live in')
+                   },
+                   tabindex: 22 ) %>
+    </p>
+
+    <p>
       <label class="form_label" for="user_signup_password"> <%= _('Password:') %></label>
       <%= password_field 'user_signup', 'password', { :size => 15, :tabindex => 30, :autocomplete => "off" } %>
     </p>
