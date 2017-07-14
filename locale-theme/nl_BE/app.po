@@ -29,13 +29,13 @@ msgid "API"
 msgstr "API"
 
 msgid "Change postcode on {{site_name}}"
-msgstr ""
+msgstr "Postcode wijzigen op {{site_name}}"
 
 msgid "Change profile photo"
 msgstr ""
 
 msgid "Change province on {{site_name}}"
-msgstr ""
+msgstr "Provincïe wijzigen op {{site_name}}"
 
 msgid "Change your email"
 msgstr ""
@@ -44,19 +44,19 @@ msgid "Change your password"
 msgstr ""
 
 msgid "Change your postcode"
-msgstr ""
+msgstr "Uw postcode wijzigen"
 
 msgid "Change your postcode used on {{site_name}}"
-msgstr ""
+msgstr "Uw postcode voor {{site_name}} wijzigen"
 
 msgid "Change your province"
-msgstr ""
+msgstr "Uw provincie wijzigen"
 
 msgid "Change your province on {{site_name}}"
-msgstr ""
+msgstr "Provincie wijzigen op {{site_name}}"
 
 msgid "Change your province used on {{site_name}}"
-msgstr ""
+msgstr "Uw provincie voor {{site_name}} wijzigen"
 
 msgid "Confirm password:"
 msgstr ""
@@ -100,10 +100,10 @@ msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests t
 msgstr ""
 
 msgid "New postcode:"
-msgstr ""
+msgstr "Nieuwe postcode:"
 
 msgid "New province:"
-msgstr ""
+msgstr "Nieuwe postcode:"
 
 msgid "Or send a message to {{public_body}} reminding them to reply to your request (using the form {{form_url}})."
 msgstr "Ofwel stuur een boodschap naar {{public_body}} om je informatieaanvraag te laten herinneren (met dit formulier {{form_url}})."
@@ -115,7 +115,7 @@ msgid "Please <strong>only</strong> write messages directly relating to your req
 msgstr ""
 
 msgid "Please select the province you live in"
-msgstr ""
+msgstr "Selecteer a.u.b uw provincie"
 
 msgid "Please use this email address for all replies to this request:"
 msgstr ""
@@ -142,19 +142,19 @@ msgid "The response to your request is <strong>long overdue</strong>. You can sa
 msgstr ""
 
 msgid "Then you can change your postcode used on {{site_name}}"
-msgstr ""
+msgstr "Uw kan dan uw postcode voor {{site_name}} wijzigen"
 
 msgid "Then you can change your province used on {{site_name}}"
-msgstr ""
+msgstr "Uw kan dan uw provincie voor {{site_name}} wijzigen"
 
 msgid "They have not replied to your {{law_used_short}} request {{title}}, as required by law"
 msgstr "Ze hebben niet geantwoord op uw vraag van {{law_used_short}} {{title}} in de door de wet voorgeschreven termijn"
 
 msgid "To change your postcode used on {{site_name}}"
-msgstr ""
+msgstr "Om uw postcode voor {{site_name}} te wijzigen"
 
 msgid "To change your province used on {{site_name}}"
-msgstr ""
+msgstr "Om uw provincie voor {{site_name}} wiizigen"
 
 msgid "View your two factor authentication one time passcode"
 msgstr ""
@@ -172,10 +172,10 @@ msgid "You can:"
 msgstr "Het kan:"
 
 msgid "You have now changed your postcode used on {{site_name}}"
-msgstr ""
+msgstr "Uw hebt uw postcode voor {{site_name}} nu gewijzigd"
 
 msgid "You have now changed your province used on {{site_name}}"
-msgstr ""
+msgstr "Uw hebt uw provincie voor {{site_name}} nu gewijzigd"
 
 msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
 msgstr ""
@@ -187,10 +187,10 @@ msgid "Your name:"
 msgstr ""
 
 msgid "Your postcode (optional):"
-msgstr ""
+msgstr "Uw postcode (optioneel):"
 
 msgid "Your province:"
-msgstr ""
+msgstr "Uw provincïe:"
 
 msgid "details"
 msgstr ""
@@ -211,7 +211,8 @@ msgstr ""
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
-#. Don't want to address your message to... ? This phrase completes the following sentences:
+#. Don't want to address your message to... ? This phrase completes the
+#. following sentences:
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
