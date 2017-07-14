@@ -29,13 +29,13 @@ msgid "API"
 msgstr "API"
 
 msgid "Change postcode on {{site_name}}"
-msgstr ""
+msgstr "Modifier le code postal sur {{site_name}}"
 
 msgid "Change profile photo"
 msgstr ""
 
 msgid "Change province on {{site_name}}"
-msgstr ""
+msgstr "Modifier la province sur {{site_name}}"
 
 msgid "Change your email"
 msgstr ""
@@ -44,19 +44,19 @@ msgid "Change your password"
 msgstr ""
 
 msgid "Change your postcode"
-msgstr ""
+msgstr "Modifier votre code postal"
 
 msgid "Change your postcode used on {{site_name}}"
-msgstr ""
+msgstr "Modifier votre code postal utilisé sur {{site_name}}"
 
 msgid "Change your province"
-msgstr ""
+msgstr "Modifier votre province"
 
 msgid "Change your province on {{site_name}}"
-msgstr ""
+msgstr "Modifier votre province sur {{site_name}}"
 
 msgid "Change your province used on {{site_name}}"
-msgstr ""
+msgstr "Modifier votre province utilisée sur {{site_name}}"
 
 msgid "Confirm password:"
 msgstr ""
@@ -100,10 +100,10 @@ msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests t
 msgstr ""
 
 msgid "New postcode:"
-msgstr ""
+msgstr "Nouveau code postal :"
 
 msgid "New province:"
-msgstr ""
+msgstr "Nouvelle province :"
 
 msgid "Or send a message to {{public_body}} reminding them to reply to your request (using the form {{form_url}})."
 msgstr "Soit envoyer un simple message à {{public_body}} afin de leur rappeler de répondre à votre demande (lien vers le formulaire {{form_url}})."
@@ -148,10 +148,10 @@ msgid "They have not replied to your {{law_used_short}} request {{title}}, as re
 msgstr "Ils n'ont pas répondu à votre demande de {{law_used_short}} {{title}}, comme requis par la loi"
 
 msgid "To change your postcode used on {{site_name}}"
-msgstr ""
+msgstr "Pour modifier votre code postal utilisé sur {{site_name}}"
 
 msgid "To change your province used on {{site_name}}"
-msgstr ""
+msgstr "Pour modifier votre province utilisée sur {{site_name}}"
 
 msgid "View your two factor authentication one time passcode"
 msgstr ""
@@ -169,10 +169,10 @@ msgid "You can:"
 msgstr "Vous pouvez :"
 
 msgid "You have now changed your postcode used on {{site_name}}"
-msgstr ""
+msgstr "Vous venez de modifier votre code postal utilisé sur {{site_name}}"
 
 msgid "You have now changed your province used on {{site_name}}"
-msgstr ""
+msgstr "Vous venez de modifier votre province utilisé sur {{site_name}}"
 
 msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
 msgstr ""
@@ -184,10 +184,10 @@ msgid "Your name:"
 msgstr ""
 
 msgid "Your postcode:"
-msgstr ""
+msgstr "Votre code postal :"
 
 msgid "Your province:"
-msgstr ""
+msgstr "Votre province :"
 
 msgid "details"
 msgstr ""
