@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-13 15:57+0000\n"
+"POT-Creation-Date: 2017-08-22 11:45+0000\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,32 +17,151 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+msgid "(You will be asked to sign in as {{user_name}})"
+msgstr "(You will be asked to sign in as {{user_name}})"
+
+msgid "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
+msgstr "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
+
 msgid "API"
 msgstr "API"
+
+msgid "Change postcode on {{site_name}}"
+msgstr "Change postcode on {{site_name}}"
+
+msgid "Change profile photo"
+msgstr "Change profile photo"
+
+msgid "Change province on {{site_name}}"
+msgstr "Change province on {{site_name}}"
+
+msgid "Change your email"
+msgstr "Change your email"
+
+msgid "Change your password"
+msgstr "Change your password"
+
+msgid "Change your postcode"
+msgstr "Change your postcode"
+
+msgid "Change your postcode used on {{site_name}}"
+msgstr "Change your postcode used on {{site_name}}"
+
+msgid "Change your province"
+msgstr "Change your province"
+
+msgid "Change your province on {{site_name}}"
+msgstr "Change your province on {{site_name}}"
+
+msgid "Change your province used on {{site_name}}"
+msgstr "Change your province used on {{site_name}}"
+
+msgid "Confirm password:"
+msgstr "Confirm password:"
 
 msgid "Contact us"
 msgstr "Contact us"
 
+msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
+msgstr "Don't want to address your message to {{person_or_body}}?  You can also write to:"
+
+msgid "Edit and add <strong>more details</strong> to the message above, explaining why you are dissatisfied with their response."
+msgstr "Edit and add <strong>more details</strong> to the message above, explaining why you are dissatisfied with their response."
+
 msgid "Either contact {{public_body}} and, on the same day, the Commission d'Accès aux Documents Administratifs (CADA) (more information {{info_url}})"
 msgstr "Either contact {{public_body}} and, on the same day, the Commission d'Accès aux Documents Administratifs (CADA) (more information {{info_url}})"
+
+#. "Follow ups" in this context means further
+#. messages sent by the requester to the authority after
+#. the initial request "Follow ups" in this context means further
+#. messages sent by the requester to the authority after
+#. the initial request
+msgid "Follow ups and new responses to this request have been stopped to prevent spam. Please <a href=\"{{url}}\">contact us</a> if you are {{user_link}} and need to send a follow up."
+msgstr "Follow ups and new responses to this request have been stopped to prevent spam. Please <a href=\"{{url}}\">contact us</a> if you are {{user_link}} and need to send a follow up."
 
 msgid "Help"
 msgstr "Help"
 
+msgid "I am asking for <strong>new information</strong>"
+msgstr "I am asking for <strong>new information</strong>"
+
+msgid "I am requesting an <strong>internal review</strong>"
+msgstr "I am requesting an <strong>internal review</strong>"
+
 msgid "If you have not already done so, you can:"
 msgstr "If you have not already done so, you can:"
+
+msgid "Improve your account security"
+msgstr "Improve your account security"
+
+msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
+msgstr "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
+
+msgid "New postcode:"
+msgstr "New postcode:"
+
+msgid "New province:"
+msgstr "New province:"
 
 msgid "Or send a message to {{public_body}} reminding them to reply to your request (using the form {{form_url}})."
 msgstr "Or send a message to {{public_body}} reminding them to reply to your request (using the form {{form_url}})."
 
+msgid "Password:"
+msgstr "Password:"
+
+msgid "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
+msgstr "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
+
+msgid "Please select the province you live in"
+msgstr "Please select the province you live in"
+
+msgid "Please use this email address for all replies to this request:"
+msgstr "Please use this email address for all replies to this request:"
+
+msgid "Preview your message"
+msgstr "Preview your message"
+
 msgid "Privacy and cookies"
 msgstr "Privacy and cookies"
+
+msgid "Sending..."
+msgstr "Sending..."
+
+msgid "Sign up"
+msgstr "Sign up"
 
 msgid "Terms of use"
 msgstr "Terms of use"
 
+msgid "The response to your request has been <strong>delayed</strong>. You can say that, by law, the authority should normally have responded <strong>promptly</strong> and by <strong>{{date}}</strong>"
+msgstr "The response to your request has been <strong>delayed</strong>. You can say that, by law, the authority should normally have responded <strong>promptly</strong> and by <strong>{{date}}</strong>"
+
+msgid "The response to your request is <strong>long overdue</strong>. You can say that, by law, under all circumstances, the authority should have responded by now"
+msgstr "The response to your request is <strong>long overdue</strong>. You can say that, by law, under all circumstances, the authority should have responded by now"
+
+msgid "Then you can change your postcode used on {{site_name}}"
+msgstr "Then you can change your postcode used on {{site_name}}"
+
+msgid "Then you can change your province used on {{site_name}}"
+msgstr "Then you can change your province used on {{site_name}}"
+
 msgid "They have not replied to your {{law_used_short}} request {{title}}, as required by law"
 msgstr "They have not replied to your {{law_used_short}} request {{title}}, as required by law"
+
+msgid "To change your postcode used on {{site_name}}"
+msgstr "To change your postcode used on {{site_name}}"
+
+msgid "To change your province used on {{site_name}}"
+msgstr "To change your province used on {{site_name}}"
+
+msgid "View your two factor authentication one time passcode"
+msgstr "View your two factor authentication one time passcode"
+
+msgid "We will not reveal your email address to anybody unless <a href=\"{{url}}\">you or the law tell us to</a>."
+msgstr "We will not reveal your email address to anybody unless <a href=\"{{url}}\">you or the law tell us to</a>."
+
+msgid "What are you doing?"
+msgstr "What are you doing?"
 
 msgid "Would you like to see a website like this in your country?"
 msgstr "Would you like to see a website like this in your country?"
@@ -50,11 +169,59 @@ msgstr "Would you like to see a website like this in your country?"
 msgid "You can:"
 msgstr "You can:"
 
+msgid "You have now changed your postcode used on {{site_name}}"
+msgstr "You have now changed your postcode used on {{site_name}}"
+
+msgid "You have now changed your province used on {{site_name}}"
+msgstr "You have now changed your province used on {{site_name}}"
+
+msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
+msgstr "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
+
+msgid "Your e-mail:"
+msgstr "Your e-mail:"
+
+msgid "Your name:"
+msgstr "Your name:"
+
+msgid "Your postcode (optional):"
+msgstr "Your postcode (optional):"
+
+msgid "Your province:"
+msgstr "Your province:"
+
+msgid "details"
+msgstr "details"
+
+msgid "edit text about you"
+msgstr "edit text about you"
+
 msgid "have delayed."
 msgstr "have delayed."
+
+msgid "internal error"
+msgstr "internal error"
+
+msgid "the main FOI contact address for {{public_body}}"
+msgstr "the main FOI contact address for {{public_body}}"
+
+#. This phrase completes the following sentences:
+#. Request an internal review from...
+#. Send a public follow up message to...
+#. Send a public reply to...
+#. Don't want to address your message to... ? This phrase completes the following sentences:
+#. Request an internal review from...
+#. Send a public follow up message to...
+#. Send a public reply to...
+#. Don't want to address your message to... ?
+msgid "the main FOI contact at {{public_body}}"
+msgstr "the main FOI contact at {{public_body}}"
 
 msgid "the {{site_name}} team"
 msgstr "the {{site_name}} team"
 
 msgid "unknown status "
 msgstr "unknown status "
+
+msgid "what's that?"
+msgstr "what's that?"
