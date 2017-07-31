@@ -17,6 +17,8 @@ Rails.configuration.to_prepare do
   # end
 
   User.class_eval do
+    strip_attributes only: [:province, :postcode]
+
     def self.province_name_options
       if FastGettext.locale == 'nl_BE'
         [
