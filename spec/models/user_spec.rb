@@ -38,4 +38,30 @@ describe User do
 
   end
 
+  context 'when validating' do
+
+    it 'allows province to be blank' do
+      user.province = ''
+      expect(user.valid?).to be true
+    end
+
+    it 'allows province to be a value from User.province_name_options' do
+      user.province = 'Bruxelles'
+      expect(user.valid?).to be true
+    end
+
+    it 'sees province as valid when not from currently selected locale' do
+      user.province = 'Antwerpen'
+      expect(user.valid?).to be true
+    end
+
+    it 'adds an error message if province is set to an unexpected value' do
+      user.province = 'London'
+      expect(user.valid?).to be false
+      expect(user.errors[:province]).
+        to include('Please enter a valid province')
+    end
+
+  end
+
 end

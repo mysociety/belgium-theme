@@ -19,9 +19,16 @@ Rails.configuration.to_prepare do
   User.class_eval do
     strip_attributes only: [:province, :postcode]
 
+    validate :province_is_valid
+
     def self.province_name_options
       all_province_names[FastGettext.locale.to_sym] ||
       all_province_names[:default]
+    end
+
+    def valid_province?
+      province.blank? ||
+      User.all_province_names.values.flatten.uniq.include?(province)
     end
 
     private
@@ -49,6 +56,12 @@ Rails.configuration.to_prepare do
             'Andere'
           ]
       }
+    end
+
+    def province_is_valid
+      unless valid_province?
+        errors.add(:province, _('Please enter a valid province'))
+      end
     end
   end
 end
