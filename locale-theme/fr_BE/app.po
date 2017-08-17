@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-14 07:50-0700\n"
+"POT-Creation-Date: 2017-08-17 16:18+0000\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
 "Last-Translator: Liz Conlan <liz@mysociety.org>, 2016\n"
 "Language-Team: French (Belgium) (https://www.transifex.com/mysociety/teams/69575/fr_BE/)\n"
@@ -114,6 +114,9 @@ msgstr ""
 msgid "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
 msgstr ""
 
+msgid "Please select the province you live in (optional)"
+msgstr ""
+
 msgid "Please use this email address for all replies to this request:"
 msgstr ""
 
@@ -183,11 +186,11 @@ msgstr ""
 msgid "Your name:"
 msgstr ""
 
-msgid "Your postcode:"
-msgstr "Votre code postal :"
+msgid "Your postcode (optional):"
+msgstr ""
 
-msgid "Your province:"
-msgstr "Votre province :"
+msgid "Your province (optional):"
+msgstr ""
 
 msgid "details"
 msgstr ""
@@ -208,8 +211,7 @@ msgstr ""
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
-#. Don't want to address your message to... ? This phrase completes the
-#. following sentences:
+#. Don't want to address your message to... ? This phrase completes the following sentences:
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...

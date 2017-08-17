@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-14 07:50-0700\n"
+"POT-Creation-Date: 2017-08-17 16:18+0000\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,6 +112,9 @@ msgstr "Password:"
 msgid "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
 msgstr "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
 
+msgid "Please select the province you live in (optional)"
+msgstr ""
+
 msgid "Please use this email address for all replies to this request:"
 msgstr "Please use this email address for all replies to this request:"
 
@@ -181,11 +184,11 @@ msgstr "Your e-mail:"
 msgid "Your name:"
 msgstr "Your name:"
 
-msgid "Your postcode:"
-msgstr "Your postcode:"
+msgid "Your postcode (optional):"
+msgstr "Your postcode (optional):"
 
-msgid "Your province:"
-msgstr "Your province:"
+msgid "Your province (optional):"
+msgstr "Your province (optional):"
 
 msgid "details"
 msgstr "details"
@@ -206,8 +209,7 @@ msgstr "the main FOI contact address for {{public_body}}"
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
-#. Don't want to address your message to... ? This phrase completes the
-#. following sentences:
+#. Don't want to address your message to... ? This phrase completes the following sentences:
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
