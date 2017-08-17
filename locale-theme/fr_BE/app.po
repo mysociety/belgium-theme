@@ -187,10 +187,10 @@ msgid "Your name:"
 msgstr ""
 
 msgid "Your postcode (optional):"
-msgstr ""
+msgstr "Votre code postal (optionnel) :"
 
 msgid "Your province (optional):"
-msgstr ""
+msgstr "Votre province (optionnel) :"
 
 msgid "details"
 msgstr ""
@@ -211,7 +211,8 @@ msgstr ""
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
-#. Don't want to address your message to... ? This phrase completes the following sentences:
+#. Don't want to address your message to... ? This phrase completes the
+#. following sentences:
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
