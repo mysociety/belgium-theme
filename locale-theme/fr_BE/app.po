@@ -115,7 +115,7 @@ msgid "Please <strong>only</strong> write messages directly relating to your req
 msgstr ""
 
 msgid "Please select the province you live in"
-msgstr ""
+msgstr "Veuillez sélectionner votre province"
 
 msgid "Please use this email address for all replies to this request:"
 msgstr ""
@@ -142,10 +142,10 @@ msgid "The response to your request is <strong>long overdue</strong>. You can sa
 msgstr ""
 
 msgid "Then you can change your postcode used on {{site_name}}"
-msgstr ""
+msgstr "Vous pouvez ensuite modifier votre code postal utilisé sur {{site_name}}"
 
 msgid "Then you can change your province used on {{site_name}}"
-msgstr ""
+msgstr "Vous pouvez ensuite modifier votre province utilisée sur {{site_name}}"
 
 msgid "They have not replied to your {{law_used_short}} request {{title}}, as required by law"
 msgstr "Ils n'ont pas répondu à votre demande de {{law_used_short}} {{title}}, comme requis par la loi"
@@ -211,7 +211,8 @@ msgstr ""
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
-#. Don't want to address your message to... ? This phrase completes the following sentences:
+#. Don't want to address your message to... ? This phrase completes the
+#. following sentences:
 #. Request an internal review from...
 #. Send a public follow up message to...
 #. Send a public reply to...
