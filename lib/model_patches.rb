@@ -19,6 +19,11 @@ Rails.configuration.to_prepare do
   User.class_eval do
     strip_attributes only: [:province, :postcode]
 
+    validates_presence_of :province,
+                          :on => :create,
+                          :message => _('Please select the province you ' \
+                                        'live in')
+
     def self.province_name_options
       if FastGettext.locale == 'nl_BE'
         [

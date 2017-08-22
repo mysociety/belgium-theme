@@ -21,7 +21,7 @@ describe 'Signing up' do
     expect(find_field('New province:').value).to eq 'Bruxelles'
   end
 
-  it 'allows a user to leave the province field blank' do
+  it 'prevents users from leaving the province field blank' do
     visit signup_path
 
     within '#signup' do
@@ -30,12 +30,9 @@ describe 'Signing up' do
       fill_in 'Password', :with => 'secret'
       fill_in 'Confirm password:', :with => 'secret'
       click_button 'Sign up'
+
+      expect(page).to have_content("Please select the province you live in")
     end
-
-    visit confirm_url(:email_token => PostRedirect.last.email_token)
-    visit signchangeprovince_path(:url_name => 'rspec')
-
-    expect(find_field('New province:').value).to eq ""
   end
 
 end

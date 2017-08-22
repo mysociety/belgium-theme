@@ -838,6 +838,11 @@ select#signchangeprovince_province {
   padding-right: 1.4em;
 }
 
+.fieldWithErrors select#user_signup_province,
+.fieldwithErrors select#signchangeprovince_province {
+  border: solid 1px red !important;
+}
+
 /* Help pages */
 
 dt {
