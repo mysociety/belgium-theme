@@ -19,27 +19,48 @@ Rails.configuration.to_prepare do
   User.class_eval do
     strip_attributes only: [:province, :postcode]
 
+    validate :province_is_valid
+
     def self.province_name_options
-      if FastGettext.locale == 'nl_BE'
-        [
-          'Antwerpen',
-          'Brussel',
-          'Limburg',
-          'Oost-Vlaanderen',
-          'West-Vlaanderen',
-          'Vlaams Brabant',
-          'Andere'
-        ]
-      else
-        [
-          'Brabant Wallon',
-          'Bruxelles',
-          'Hainaut',
-          'Liège',
-          'Luxembourg',
-          'Namur',
-          'Autre'
-        ]
+      all_province_names[FastGettext.locale.to_sym] ||
+      all_province_names[:default]
+    end
+
+    def valid_province?
+      province.blank? ||
+      User.all_province_names.values.flatten.uniq.include?(province)
+    end
+
+    private
+
+    def self.all_province_names
+      {
+        :default =>
+          [
+            'Brabant Wallon',
+            'Bruxelles',
+            'Hainaut',
+            'Liège',
+            'Luxembourg',
+            'Namur',
+            'Autre'
+        ],
+        :nl_BE =>
+          [
+            'Antwerpen',
+            'Brussel',
+            'Limburg',
+            'Oost-Vlaanderen',
+            'West-Vlaanderen',
+            'Vlaams Brabant',
+            'Andere'
+          ]
+      }
+    end
+
+    def province_is_valid
+      unless valid_province?
+        errors.add(:province, _('Please enter a valid province'))
       end
     end
   end
