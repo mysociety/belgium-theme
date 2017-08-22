@@ -52,4 +52,17 @@ describe 'Managing province data' do
     end
   end
 
+  it 'prevents users from removing province data once set' do
+    using_session(user) do
+      visit signchangeprovince_path
+      select 'Please select the province you live in', :from => 'New province:'
+      click_button "Change province on #{AlaveteliConfiguration.site_name}"
+
+      expect(page).
+        to have_selector('#errorExplanation ul li',
+                         :text => 'Please select the province you live in'
+        )
+    end
+  end
+
 end

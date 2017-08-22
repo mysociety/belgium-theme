@@ -24,6 +24,8 @@ Rails.configuration.to_prepare do
                           :message => _('Please select the province you ' \
                                         'live in')
 
+    validate :province_not_removed, :on => :update
+
     def self.province_name_options
       if FastGettext.locale == 'nl_BE'
         [
@@ -47,5 +49,14 @@ Rails.configuration.to_prepare do
         ]
       end
     end
+
+    private
+
+    def province_not_removed
+      if !province_was.blank? && province.blank?
+        errors.add(:province, _('Please select the province you live in'))
+      end
+    end
+
   end
 end
