@@ -35,7 +35,7 @@ msgid "Change profile photo"
 msgstr ""
 
 msgid "Change province on {{site_name}}"
-msgstr "Provincïe wijzigen op {{site_name}}"
+msgstr "Provincie wijzigen op {{site_name}}"
 
 msgid "Change your email"
 msgstr ""
@@ -103,7 +103,7 @@ msgid "New postcode:"
 msgstr "Nieuwe postcode:"
 
 msgid "New province:"
-msgstr "Nieuwe postcode:"
+msgstr "Nieuwe provincie:"
 
 msgid "Or send a message to {{public_body}} reminding them to reply to your request (using the form {{form_url}})."
 msgstr "Ofwel stuur een boodschap naar {{public_body}} om je informatieaanvraag te laten herinneren (met dit formulier {{form_url}})."
@@ -190,7 +190,7 @@ msgid "Your postcode (optional):"
 msgstr "Uw postcode (optioneel):"
 
 msgid "Your province:"
-msgstr "Uw provincïe:"
+msgstr "Uw provincie:"
 
 msgid "details"
 msgstr ""
