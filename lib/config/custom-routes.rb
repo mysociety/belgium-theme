@@ -2,9 +2,9 @@
 
 Rails.application.routes.draw do
   # brand new controller example
-  # match '/mycontroller' => 'general#mycontroller'
+  # get '/mycontroller' => 'general#mycontroller'
   # Additional help page example
-  # match '/help/help_out' => 'help#help_out'
+  # get '/help/help_out' => 'help#help_out'
 
   get '/participer', to: redirect('http://anticor.be/participer')
   get '/neemdeel', to: redirect('http://anticor.be/neemdeel')
