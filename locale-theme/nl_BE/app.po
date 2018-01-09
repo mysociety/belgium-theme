@@ -5,13 +5,14 @@
 #
 # Translators:
 # Liz Conlan <liz@mysociety.org>, 2017
+# claude transparencia <audit.citoyen.quartier@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-08-22 11:45+0000\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
-"Last-Translator: Liz Conlan <liz@mysociety.org>, 2017\n"
+"Last-Translator: claude transparencia <audit.citoyen.quartier@gmail.com>, 2018\n"
 "Language-Team: Dutch (Belgium) (https://www.transifex.com/mysociety/teams/69575/nl_BE/)\n"
 "Language: nl_BE\n"
 "MIME-Version: 1.0\n"
@@ -20,10 +21,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "(You will be asked to sign in as {{user_name}})"
-msgstr ""
+msgstr "(U zal gevraagd worden te tekenen als {{user_name}})"
 
 msgid "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
-msgstr ""
+msgstr "<strong>Eender wat anders</strong>, als verduidelijken, aanporren, bedanken"
 
 msgid "API"
 msgstr "API"
@@ -32,16 +33,16 @@ msgid "Change postcode on {{site_name}}"
 msgstr "Postcode wijzigen op {{site_name}}"
 
 msgid "Change profile photo"
-msgstr ""
+msgstr "Verander uw profielfoto"
 
 msgid "Change province on {{site_name}}"
 msgstr "Provincie wijzigen op {{site_name}}"
 
 msgid "Change your email"
-msgstr ""
+msgstr "Verander uw e-mail"
 
 msgid "Change your password"
-msgstr ""
+msgstr "Verander van paswoord"
 
 msgid "Change your postcode"
 msgstr "Uw postcode wijzigen"
@@ -59,16 +60,16 @@ msgid "Change your province used on {{site_name}}"
 msgstr "Uw provincie voor {{site_name}} wijzigen"
 
 msgid "Confirm password:"
-msgstr ""
+msgstr "Bevestig uw paswoord:"
 
 msgid "Contact us"
 msgstr "Contacteer ons"
 
 msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
-msgstr ""
+msgstr "Wil u uw boodschap niet richten tot {{person_or_body}}? U kan ook schrijven naar:"
 
 msgid "Edit and add <strong>more details</strong> to the message above, explaining why you are dissatisfied with their response."
-msgstr ""
+msgstr "Schrijf en voeg er <strong>meer details</strong> bij aan bovenstaand bericht met de uitleg waarom niet tevreden bent met hun antwoord."
 
 msgid "Either contact {{public_body}} and, on the same day, the Commission d'Accès aux Documents Administratifs (CADA) (more information {{info_url}})"
 msgstr "Ofwel, neem contact met  {{public_body}} en, op dezelfde dag, met de Commissie voor Toegang tot Bestuursdocumenten (CTB) (meer informatie {{info_url}})"
@@ -79,25 +80,25 @@ msgstr "Ofwel, neem contact met  {{public_body}} en, op dezelfde dag, met de Com
 #. messages sent by the requester to the authority after
 #. the initial request
 msgid "Follow ups and new responses to this request have been stopped to prevent spam. Please <a href=\"{{url}}\">contact us</a> if you are {{user_link}} and need to send a follow up."
-msgstr ""
+msgstr "Follow-ups en nieuwe antwoorden werden voor deze aanvraag gestopt om spam te vermijden. Gelieve <a href=\"{{url}}\">ons te contacteren</a> indien u {{user_link}} bent en u wil ons een follow-up sturen."
 
 msgid "Help"
 msgstr "Hulp"
 
 msgid "I am asking for <strong>new information</strong>"
-msgstr ""
+msgstr "Ik vraag <strong>nieuwe informatie</strong>"
 
 msgid "I am requesting an <strong>internal review</strong>"
-msgstr ""
+msgstr "Ik vraag een  <strong>heroverweging</strong> van mijn aanvraag"
 
 msgid "If you have not already done so, you can:"
 msgstr "Als het nog niet wordt gedaan, mag uw:"
 
 msgid "Improve your account security"
-msgstr ""
+msgstr "Verhoog de veiligheid van uw account"
 
 msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
-msgstr ""
+msgstr "Is {{email_address}} een verkeerd adres om {{type_of_request}} aan te vragen {{public_body_name}}? Indien ja, gelieve met ons contact op te nemenvia deze weg:"
 
 msgid "New postcode:"
 msgstr "Nieuwe postcode:"
@@ -109,37 +110,37 @@ msgid "Or send a message to {{public_body}} reminding them to reply to your requ
 msgstr "Ofwel stuur een boodschap naar {{public_body}} om je informatieaanvraag te laten herinneren (met dit formulier {{form_url}})."
 
 msgid "Password:"
-msgstr ""
+msgstr "Paswoord"
 
 msgid "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
-msgstr ""
+msgstr "Gelieve <strong>enkel</strong> berichten schrijven in direct verband met uw aanvraag {{request_link}}. Indien u bijkomende informatie wenst dat niet in uw oorspronkelijke vraag stond, dan <a href=\"{{new_request_link}}\">vult u best een nieuw aanvraag in</a>."
 
 msgid "Please select the province you live in"
 msgstr "Selecteer a.u.b uw provincie"
 
 msgid "Please use this email address for all replies to this request:"
-msgstr ""
+msgstr "Gelieve dit e-mailadres te gebruiken voor alle antwoorden op deze vraag."
 
 msgid "Preview your message"
-msgstr ""
+msgstr "Kijk je boodschap na"
 
 msgid "Privacy and cookies"
 msgstr "Privacy en cookies"
 
 msgid "Sending..."
-msgstr ""
+msgstr "Verzend..."
 
 msgid "Sign up"
-msgstr ""
+msgstr "Meld je"
 
 msgid "Terms of use"
 msgstr "Gebruiksvoorwaarden"
 
 msgid "The response to your request has been <strong>delayed</strong>. You can say that, by law, the authority should normally have responded <strong>promptly</strong> and by <strong>{{date}}</strong>"
-msgstr ""
+msgstr "Het antwoord op uw vraag heeft <strong>vertraging</strong>. Het zou zo moeten zijn, volgens de wet, dat de overheid normaal had <strong>onmiddelijk</strong> en zeker op <strong>{{date}}</strong>"
 
 msgid "The response to your request is <strong>long overdue</strong>. You can say that, by law, under all circumstances, the authority should have responded by now"
-msgstr ""
+msgstr "Het antwoord op uw vraag is <strong>veel te laat1</strong> Het zou zo moeten zijn, volgens de wet, onder alle omstandigheden, dat de overheid al had moeten antwoorden."
 
 msgid "Then you can change your postcode used on {{site_name}}"
 msgstr "Uw kan dan uw postcode voor {{site_name}} wijzigen"
@@ -157,13 +158,13 @@ msgid "To change your province used on {{site_name}}"
 msgstr "Om uw provincie voor {{site_name}} wiizigen"
 
 msgid "View your two factor authentication one time passcode"
-msgstr ""
+msgstr "Zie hier uw indentificatie bestaande uit twee factoren als eenmalige pascode"
 
 msgid "We will not reveal your email address to anybody unless <a href=\"{{url}}\">you or the law tell us to</a>."
-msgstr ""
+msgstr "We zullen uw e-mailadres aan niemand doorgeven tenzij <a href=\"{{url}}\">u of de wet het ons vraagt</a>."
 
 msgid "What are you doing?"
-msgstr ""
+msgstr "Wat doet u nu?"
 
 msgid "Would you like to see a website like this in your country?"
 msgstr "Wou jij graag een gelijkaardige website in je eigen land zien?"
@@ -178,13 +179,13 @@ msgid "You have now changed your province used on {{site_name}}"
 msgstr "Uw hebt uw provincie voor {{site_name}} nu gewijzigd"
 
 msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
-msgstr ""
+msgstr "Uw <strong>naam zal openbaar worden</strong> (<a href=\"{{why_url}}\">waarom?</a>) op deze website en op zoekmachines. <a href=\"{{help_url}}\">Wil u een pseudoniem gebruiken?</a>"
 
 msgid "Your e-mail:"
-msgstr ""
+msgstr "Uw e-mail:"
 
 msgid "Your name:"
-msgstr ""
+msgstr "Uw naam:"
 
 msgid "Your postcode (optional):"
 msgstr "Uw postcode (optioneel):"
@@ -193,19 +194,19 @@ msgid "Your province:"
 msgstr "Uw provincie:"
 
 msgid "details"
-msgstr ""
+msgstr "details"
 
 msgid "edit text about you"
-msgstr ""
+msgstr "Schrijf een tekst over uzelf"
 
 msgid "have delayed."
 msgstr "is latttijdig."
 
 msgid "internal error"
-msgstr ""
+msgstr "Interne fout"
 
 msgid "the main FOI contact address for {{public_body}}"
-msgstr ""
+msgstr "Het belangrijkste \"Openbaarheid van Bestuur\"  contactadres voor {{public_body}}"
 
 #. This phrase completes the following sentences:
 #. Request an internal review from...
@@ -218,7 +219,7 @@ msgstr ""
 #. Send a public reply to...
 #. Don't want to address your message to... ?
 msgid "the main FOI contact at {{public_body}}"
-msgstr ""
+msgstr "Het belagrijkste \"Openbaarheid van Bestuur\" contact bij {{public_body}}"
 
 msgid "the {{site_name}} team"
 msgstr "Het {{site_name}} team"
@@ -227,4 +228,4 @@ msgid "unknown status "
 msgstr "Status onbekend"
 
 msgid "what's that?"
-msgstr ""
+msgstr "Wat is dat?"
