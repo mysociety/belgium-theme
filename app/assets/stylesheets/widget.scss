@@ -1,6 +1,6 @@
-$body-bg: #f7eee1;
-$button-bg: #8b9352;
-$heading-color: #3d3b38;
+$body-bg: #f4f4f4;
+$button-bg: #4040bf;
+$heading-color: #333333;
 $status-success: #aab26e;
 $status-failure: #ff7959;
 $status-pending: #e69e5d;
@@ -105,6 +105,9 @@ a:active {
     width: 160px;
     height: 75px;
     overflow: hidden;
+    a {
+        color: $button-bg;
+    }
   }
 
 .alaveteli-widget__status {
@@ -189,6 +192,7 @@ a:active {
     border: none;
     position: relative;
     top: 0.375em;
+    max-width: 170px;
     &:hover,
     &:active,
     &:focus,
