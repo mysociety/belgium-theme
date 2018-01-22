@@ -5,6 +5,7 @@
 #
 # Translators:
 # Liz Conlan <liz@mysociety.org>, 2016
+# Christophe Van Gheluwe <info@vg-webdesign.be>, 2018
 # claude transparencia <audit.citoyen.quartier@gmail.com>, 2018
 msgid ""
 msgstr ""
@@ -21,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "(You will be asked to sign in as {{user_name}})"
-msgstr "(vous sera demandé de vous connecter comme {{user_name}})"
+msgstr "(il vous sera demandé de vous connecter en tant que {{user_name}})"
 
 msgid "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
 msgstr "<strong>tout autre message</strong>, comme une clarification, un rappel, un remerciement"
