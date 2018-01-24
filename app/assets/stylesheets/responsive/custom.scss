@@ -53,25 +53,33 @@
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
-#navigation .logged-in-menu a,
-#navigation .logged-in-menu__signout-link a {
-  color: #197ace;
-  text-decoration: none;
-  transition: none;
-  &:hover {
-    color: #197ace;
-    background-color: transparent;
-    text-decoration: underline;
+.navigation .logged-in-menu a,
+.navigation .logged-in-menu__signout-link a {
+  @include respond-min( $main_menu-mobile_menu_cutoff ){
+    color: $link-color;
+    text-decoration: none;
+    transition: none;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color_black;
+      background-color: transparent;
+      text-decoration: underline;
+    }
   }
 }
 
-#navigation .logged-in-menu__signout-link a {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.8em;
-  color: #888;
-  &:hover {
-    color: #888;
+.navigation .logged-in-menu a,
+.navigation .logged-in-menu__signout-link a {
+  color: $color_black;
+  padding: 0;
+  .no-js & {
+    @extend %menu-item;
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 
@@ -296,7 +304,7 @@ a.link_button_green_large {
   }
 }
 
-.navigation{
+.navigation {
   border-bottom: none;
   a {
     @extend %menu-item;
@@ -315,18 +323,18 @@ a.link_button_green_large {
       margin-top: 0.626em;
     }
   }
-}
 
-/* Vertically align the search box */
-#navigation_search{
-  input{
-    margin-top:0.313em;
-    margin-bottom:0.313em;
-    height: 1.875em;
-    @include ie8 {
-      height: 33px;
-      font-size: 1.1em;
-      padding: 0;
+  /* Vertically align the search box */
+  #navigation_search{
+    input{
+      margin-top:0.313em;
+      margin-bottom:0.313em;
+      height: 1.875em;
+      @include ie8 {
+        height: 33px;
+        font-size: 1.1em;
+        padding: 0;
+      }
     }
   }
 }
