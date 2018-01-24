@@ -278,12 +278,15 @@ a.link_button_green_large {
 
 /* Header */
 
-#banner_inner {
-  background-color: $color_primary;
+.topnav {
+  background-color: darken($color_primary, 10%);
+  @media( min-width: $main_menu-mobile_menu_cutoff ) {
+    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+  }
 }
 
-#topnav {
-  background-color: darken($color_primary, 10%);
+#banner_inner {
+  background-color: $color_primary;
 }
 
 .site-title__logo {
