@@ -77,5 +77,4 @@ repos << FastGettext::TranslationRepository.build(
            :path => 'locale',
            :type => :po)
 
-FastGettext.add_text_domain 'app', :type=> :chain, :chain=> repos
-FastGettext.default_text_domain = 'app'
+AlaveteliLocalization.set_default_text_domain('app', repos)
