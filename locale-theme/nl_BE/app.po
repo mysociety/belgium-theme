@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-22 11:45+0000\n"
+"POT-Creation-Date: 2018-06-29 10:10+0000\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
 "Last-Translator: claude transparencia <audit.citoyen.quartier@gmail.com>, 2018\n"
 "Language-Team: Dutch (Belgium) (https://www.transifex.com/mysociety/teams/69575/nl_BE/)\n"
@@ -28,6 +28,15 @@ msgstr "<strong>Eender wat anders</strong>, als verduidelijken, aanporren, bedan
 
 msgid "API"
 msgstr "API"
+
+msgid "Act on what you've learnt"
+msgstr ""
+
+msgid "Blog"
+msgstr ""
+
+msgid "Browse requests"
+msgstr ""
 
 msgid "Change postcode on {{site_name}}"
 msgstr "Postcode wijzigen op {{site_name}}"
@@ -65,6 +74,9 @@ msgstr "Bevestig uw paswoord:"
 msgid "Contact us"
 msgstr "Contacteer ons"
 
+msgid "Create a widget for this request"
+msgstr ""
+
 msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
 msgstr "Wil u uw boodschap niet richten tot {{person_or_body}}? U kan ook schrijven naar:"
 
@@ -85,6 +97,9 @@ msgstr "Follow-ups en nieuwe antwoorden werden voor deze aanvraag gestopt om spa
 msgid "Help"
 msgstr "Hulp"
 
+msgid "How it works"
+msgstr ""
+
 msgid "I am asking for <strong>new information</strong>"
 msgstr "Ik vraag <strong>nieuwe informatie</strong>"
 
@@ -99,6 +114,12 @@ msgstr "Verhoog de veiligheid van uw account"
 
 msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
 msgstr "Is {{email_address}} een verkeerd adres om {{type_of_request}} aan te vragen {{public_body_name}}? Indien ja, gelieve met ons contact op te nemenvia deze weg:"
+
+msgid "Learn more &rarr;"
+msgstr ""
+
+msgid "Make a request"
+msgstr ""
 
 msgid "New postcode:"
 msgstr "Nieuwe postcode:"
@@ -130,6 +151,9 @@ msgstr "Privacy en cookies"
 msgid "Sending..."
 msgstr "Verzend..."
 
+msgid "Share on Facebook"
+msgstr ""
+
 msgid "Sign up"
 msgstr "Meld je"
 
@@ -157,17 +181,35 @@ msgstr "Om uw postcode voor {{site_name}} te wijzigen"
 msgid "To change your province used on {{site_name}}"
 msgstr "Om uw provincie voor {{site_name}} wiizigen"
 
+msgid "Tweet this request"
+msgstr ""
+
+msgid "Use this site to make your request for information – we'll show you how."
+msgstr ""
+
+msgid "View authorities"
+msgstr ""
+
 msgid "View your two factor authentication one time passcode"
 msgstr "Zie hier uw indentificatie bestaande uit twee factoren als eenmalige pascode"
 
+msgid "We publish it all online. Great! Now you have your answer, and everybody else can access it too."
+msgstr ""
+
 msgid "We will not reveal your email address to anybody unless <a href=\"{{url}}\">you or the law tell us to</a>."
 msgstr "We zullen uw e-mailadres aan niemand doorgeven tenzij <a href=\"{{url}}\">u of de wet het ons vraagt</a>."
+
+msgid "We'll drop you an email as soon as your request gets a response."
+msgstr ""
 
 msgid "What are you doing?"
 msgstr "Wat doet u nu?"
 
 msgid "Would you like to see a website like this in your country?"
 msgstr "Wou jij graag een gelijkaardige website in je eigen land zien?"
+
+msgid "Write about this on our blog"
+msgstr ""
 
 msgid "You can:"
 msgstr "Het kan:"
@@ -177,6 +219,9 @@ msgstr "Uw hebt uw postcode voor {{site_name}} nu gewijzigd"
 
 msgid "You have now changed your province used on {{site_name}}"
 msgstr "Uw hebt uw provincie voor {{site_name}} nu gewijzigd"
+
+msgid "You have the <strong>right</strong> to request information from any publicly-funded body, and get answers. {{site_name}} helps you make a Freedom of Information request. It also publishes all requests online."
+msgstr ""
 
 msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
 msgstr "Uw <strong>naam zal openbaar worden</strong> (<a href=\"{{why_url}}\">waarom?</a>) op deze website en op zoekmachines. <a href=\"{{help_url}}\">Wil u een pseudoniem gebruiken?</a>"
@@ -204,6 +249,9 @@ msgstr "is latttijdig."
 
 msgid "internal error"
 msgstr "Interne fout"
+
+msgid "mySociety:Helping people set up sites like {{site_name}} all over the world"
+msgstr ""
 
 msgid "the main FOI contact address for {{public_body}}"
 msgstr "Het belangrijkste \"Openbaarheid van Bestuur\"  contactadres voor {{public_body}}"

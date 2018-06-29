@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-22 11:45+0000\n"
+"POT-Creation-Date: 2018-06-29 10:10+0000\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,15 @@ msgid "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
 msgstr ""
 
 msgid "API"
+msgstr ""
+
+msgid "Act on what you've learnt"
+msgstr ""
+
+msgid "Blog"
+msgstr ""
+
+msgid "Browse requests"
 msgstr ""
 
 msgid "Change postcode on {{site_name}}"
@@ -62,6 +71,9 @@ msgstr ""
 msgid "Contact us"
 msgstr ""
 
+msgid "Create a widget for this request"
+msgstr ""
+
 msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
 msgstr ""
 
@@ -82,6 +94,9 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
+msgid "How it works"
+msgstr ""
+
 msgid "I am asking for <strong>new information</strong>"
 msgstr ""
 
@@ -95,6 +110,12 @@ msgid "Improve your account security"
 msgstr ""
 
 msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
+msgstr ""
+
+msgid "Learn more &rarr;"
+msgstr ""
+
+msgid "Make a request"
 msgstr ""
 
 msgid "New postcode:"
@@ -127,6 +148,9 @@ msgstr ""
 msgid "Sending..."
 msgstr ""
 
+msgid "Share on Facebook"
+msgstr ""
+
 msgid "Sign up"
 msgstr ""
 
@@ -154,16 +178,34 @@ msgstr ""
 msgid "To change your province used on {{site_name}}"
 msgstr ""
 
+msgid "Tweet this request"
+msgstr ""
+
+msgid "Use this site to make your request for information – we'll show you how."
+msgstr ""
+
+msgid "View authorities"
+msgstr ""
+
 msgid "View your two factor authentication one time passcode"
 msgstr ""
 
+msgid "We publish it all online. Great! Now you have your answer, and everybody else can access it too."
+msgstr ""
+
 msgid "We will not reveal your email address to anybody unless <a href=\"{{url}}\">you or the law tell us to</a>."
+msgstr ""
+
+msgid "We'll drop you an email as soon as your request gets a response."
 msgstr ""
 
 msgid "What are you doing?"
 msgstr ""
 
 msgid "Would you like to see a website like this in your country?"
+msgstr ""
+
+msgid "Write about this on our blog"
 msgstr ""
 
 msgid "You can:"
@@ -173,6 +215,9 @@ msgid "You have now changed your postcode used on {{site_name}}"
 msgstr ""
 
 msgid "You have now changed your province used on {{site_name}}"
+msgstr ""
+
+msgid "You have the <strong>right</strong> to request information from any publicly-funded body, and get answers. {{site_name}} helps you make a Freedom of Information request. It also publishes all requests online."
 msgstr ""
 
 msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
@@ -200,6 +245,9 @@ msgid "have delayed."
 msgstr ""
 
 msgid "internal error"
+msgstr ""
+
+msgid "mySociety:Helping people set up sites like {{site_name}} all over the world"
 msgstr ""
 
 msgid "the main FOI contact address for {{public_body}}"

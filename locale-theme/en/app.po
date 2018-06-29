@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alaveteli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-22 11:45+0000\n"
+"POT-Creation-Date: 2018-06-29 10:10+0000\n"
 "PO-Revision-Date: 2016-11-29 07:08-0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,15 @@ msgstr "<strong>Anything else</strong>, such as clarifying, prompting, thanking"
 
 msgid "API"
 msgstr "API"
+
+msgid "Act on what you've learnt"
+msgstr "Act on what you've learnt"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Browse requests"
+msgstr "Browse requests"
 
 msgid "Change postcode on {{site_name}}"
 msgstr "Change postcode on {{site_name}}"
@@ -62,6 +71,9 @@ msgstr "Confirm password:"
 msgid "Contact us"
 msgstr "Contact us"
 
+msgid "Create a widget for this request"
+msgstr "Create a widget for this request"
+
 msgid "Don't want to address your message to {{person_or_body}}?  You can also write to:"
 msgstr "Don't want to address your message to {{person_or_body}}?  You can also write to:"
 
@@ -82,6 +94,9 @@ msgstr "Follow ups and new responses to this request have been stopped to preven
 msgid "Help"
 msgstr "Help"
 
+msgid "How it works"
+msgstr "How it works"
+
 msgid "I am asking for <strong>new information</strong>"
 msgstr "I am asking for <strong>new information</strong>"
 
@@ -96,6 +111,12 @@ msgstr "Improve your account security"
 
 msgid "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
 msgstr "Is {{email_address}} the wrong address for {{type_of_request}} requests to {{public_body_name}}? If so, please contact us using this form:"
+
+msgid "Learn more &rarr;"
+msgstr "Learn more &rarr;"
+
+msgid "Make a request"
+msgstr "Make a request"
 
 msgid "New postcode:"
 msgstr "New postcode:"
@@ -127,6 +148,9 @@ msgstr "Privacy and cookies"
 msgid "Sending..."
 msgstr "Sending..."
 
+msgid "Share on Facebook"
+msgstr "Share on Facebook"
+
 msgid "Sign up"
 msgstr "Sign up"
 
@@ -154,17 +178,35 @@ msgstr "To change your postcode used on {{site_name}}"
 msgid "To change your province used on {{site_name}}"
 msgstr "To change your province used on {{site_name}}"
 
+msgid "Tweet this request"
+msgstr "Tweet this request"
+
+msgid "Use this site to make your request for information – we'll show you how."
+msgstr "Use this site to make your request for information – we'll show you how."
+
+msgid "View authorities"
+msgstr "View authorities"
+
 msgid "View your two factor authentication one time passcode"
 msgstr "View your two factor authentication one time passcode"
 
+msgid "We publish it all online. Great! Now you have your answer, and everybody else can access it too."
+msgstr "We publish it all online. Great! Now you have your answer, and everybody else can access it too."
+
 msgid "We will not reveal your email address to anybody unless <a href=\"{{url}}\">you or the law tell us to</a>."
 msgstr "We will not reveal your email address to anybody unless <a href=\"{{url}}\">you or the law tell us to</a>."
+
+msgid "We'll drop you an email as soon as your request gets a response."
+msgstr "We'll drop you an email as soon as your request gets a response."
 
 msgid "What are you doing?"
 msgstr "What are you doing?"
 
 msgid "Would you like to see a website like this in your country?"
 msgstr "Would you like to see a website like this in your country?"
+
+msgid "Write about this on our blog"
+msgstr "Write about this on our blog"
 
 msgid "You can:"
 msgstr "You can:"
@@ -174,6 +216,9 @@ msgstr "You have now changed your postcode used on {{site_name}}"
 
 msgid "You have now changed your province used on {{site_name}}"
 msgstr "You have now changed your province used on {{site_name}}"
+
+msgid "You have the <strong>right</strong> to request information from any publicly-funded body, and get answers. {{site_name}} helps you make a Freedom of Information request. It also publishes all requests online."
+msgstr "You have the <strong>right</strong> to request information from any publicly-funded body, and get answers. {{site_name}} helps you make a Freedom of Information request. It also publishes all requests online."
 
 msgid "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
 msgstr "Your <strong>name will appear publicly</strong> (<a href=\"{{why_url}}\">why?</a>) on this website and in search engines. <a href=\"{{help_url}}\">Thinking of using a pseudonym?</a>"
@@ -201,6 +246,9 @@ msgstr "have delayed."
 
 msgid "internal error"
 msgstr "internal error"
+
+msgid "mySociety:Helping people set up sites like {{site_name}} all over the world"
+msgstr "mySociety:Helping people set up sites like {{site_name}} all over the world"
 
 msgid "the main FOI contact address for {{public_body}}"
 msgstr "the main FOI contact address for {{public_body}}"
