@@ -210,7 +210,7 @@ msgid "Would you like to see a website like this in your country?"
 msgstr "Voulez-vous voir un site similaire dans votre pays ?"
 
 msgid "Write about this on our blog"
-msgstr ""
+msgstr "Sur notre blog, dites nous en plus sur cette demande en y rédigeant un billet"
 
 msgid "You can:"
 msgstr "Vous pouvez :"
