@@ -1,1 +1,9 @@
-<!-- Consider listing websites that users might find useful here (in your theme) -->
+<div class="act_link">
+  <i class="act-link-icon act-link-icon--youtube"></i>
+  <%= link_to _('Our YouTube channel'),
+              'https://www.youtube.com/channel/UCUo7uaX9f7OQcGiOQXZohUQ',
+              onclick: track_analytics_event(
+                AnalyticsEvent::Category::OUTBOUND,
+                AnalyticsEvent::Action::YOUTUBE_EXIT,
+                label: 'Request sidebar') %>
+</div>

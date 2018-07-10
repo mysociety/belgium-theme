@@ -738,6 +738,14 @@ a.correspondence__header__date:visited {
   @include button-primary();
 }
 
+.act-link-icon--youtube {
+  background-size: 16px;
+  background-image: image-url('youtube.png');
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+     background-image:image-url('youtube@2.png');
+  }
+}
+
 /* Status lines and icons */
 .icon_waiting_classification,
 .icon_waiting_response,
