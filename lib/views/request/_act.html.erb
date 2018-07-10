@@ -41,6 +41,17 @@
                 :label => "Request sidebar") %>
 </div>
 
+
+<div class="act_link">
+  <i class="act-link-icon act-link-icon--youtube"></i>
+  <%= link_to _("Our YouTube channel"),
+              "https://www.youtube.com/channel/UCUo7uaX9f7OQcGiOQXZohUQ",
+              :onclick => track_analytics_event(
+                AnalyticsEvent::Category::OUTBOUND,
+                "YOUTUBE_EXIT",
+                :label => "Request sidebar") %>
+</div>
+
 <% if AlaveteliConfiguration::enable_widgets %>
   <div class="act_link">
     <i class="act-link-icon act-link-icon--widget"></i>
