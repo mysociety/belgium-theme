@@ -6,6 +6,11 @@
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
 Rails.configuration.to_prepare do
+  module AnalyticsEvent
+    module Action
+      YOUTUBE_EXIT = 'YouTube Exit'
+    end
+  end
 
   # Example of adding a default text to each message
   # OutgoingMessage.class_eval do
