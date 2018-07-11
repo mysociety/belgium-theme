@@ -131,7 +131,7 @@ msgid "Or send a message to {{public_body}} reminding them to reply to your requ
 msgstr "Ofwel stuur een boodschap naar {{public_body}} om je informatieaanvraag te laten herinneren (met dit formulier {{form_url}})."
 
 msgid "Our YouTube channel"
-msgstr ""
+msgstr "Ons YouTube-kanaal"
 
 msgid "Password:"
 msgstr "Paswoord"

@@ -132,7 +132,7 @@ msgid "Or send a message to {{public_body}} reminding them to reply to your requ
 msgstr "Soit envoyer un simple message à {{public_body}} afin de leur rappeler de répondre à votre demande (lien vers le formulaire {{form_url}})."
 
 msgid "Our YouTube channel"
-msgstr ""
+msgstr "Notre chaîne YouTube"
 
 msgid "Password:"
 msgstr "Mot de passe:"
@@ -213,7 +213,7 @@ msgid "Would you like to see a website like this in your country?"
 msgstr "Voulez-vous voir un site similaire dans votre pays ?"
 
 msgid "Write about this on our blog"
-msgstr "Sur notre blog, dites nous en plus sur cette demande en y rédigeant un billet"
+msgstr "Ecrivez sur notre blog,  pour raconter votre histoire sur cette demande"
 
 msgid "You can:"
 msgstr "Vous pouvez :"
