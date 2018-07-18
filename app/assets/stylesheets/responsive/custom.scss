@@ -237,11 +237,16 @@ a.link_button_green_large {
   width: ($logo-width / 2);
   height: ($logo-height / 2);
   background-size: ($logo-width / 2) ($logo-height / 2);
+  margin: -6px 0 -6px 0;
 
   @include respond-min( $main_menu-mobile_menu_cutoff ){
     width: $logo-width;
     height: $logo-height;
     background-size: $logo-width $logo-height;
+
+    margin: -12px 0 -38px 0;
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -559,8 +564,8 @@ a.link_button_green_large {
 
   .rsp_menu_button{
     position: absolute;
-    top: 5px; // vertically centre the button in the header
-    right: 4px; // 15px for margin minus 9 for background offset
+    top: 13px; // vertically centre the button in the header
+    right: 13px;
     @extend .image-replacement;
     background-image: image-url('hamburger.png');
     background-repeat: no-repeat;
