@@ -213,4 +213,5 @@ a:active {
 .alaveteli-widget__button--create-track,
 .alaveteli-widget__button--create-vote {
   @extend .alaveteli-widget__button;
+  white-space: normal;
 }
