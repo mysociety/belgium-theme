@@ -25,4 +25,16 @@ describe User do
     expect(user.valid?).to be true
   end
 
+  describe '.internal_admin_user' do
+
+    before do
+      User.find_by_email(AlaveteliConfiguration.contact_email).try(:destroy)
+    end
+
+    it 'sets the province when creating a new internal admin user' do
+      expect(User.internal_admin_user.province).to eq('Bruxelles')
+    end
+
+  end
+
 end

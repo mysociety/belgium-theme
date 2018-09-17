@@ -64,7 +64,8 @@ Rails.configuration.to_prepare do
           :name => 'Internal admin user',
           :email => AlaveteliConfiguration.contact_email,
           :password => password,
-          :password_confirmation => password
+          :password_confirmation => password,
+          :province => 'Bruxelles'
         )
         user.save!
       end
