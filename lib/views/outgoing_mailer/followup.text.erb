@@ -3,7 +3,7 @@
 <%= raw @outgoing_message.quoted_part_to_append_to_email.strip %>
 
 -------------------------------------------------------------------
-<% [:fr_BE, :nl_BE].each_with_index do |locale, i| %>
+<% @info_request.public_body.available_locales.each_with_index do |locale, i| %>
   <% I18n.with_locale(locale) do %>
 
 <%= _('Please use this email address for all replies to this request:')%>
@@ -11,7 +11,7 @@
 
 <%= render :partial => 'followup_footer' %>
   <% end %>
-  <% if i < 1 %>
+  <% if i < 1 && @info_request.public_body.available_locales.count > 1 %>
 --------------
   <% end %>
 <% end %>
