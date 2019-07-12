@@ -11,6 +11,9 @@
   <li><%= link_to_unless_current "Programmers API", help_api_path %></li>
   <li><%= link_to_unless_current "Advanced search", advanced_search_path %></li>
   <li><%= link_to_unless_current "Conditions d’utilisation", help_conditions_path %></li>
+  <% if feature_enabled?(:alaveteli_pro) %>
+    <li><%= link_to_unless_current "Pro", help_pro_path %></li>
+  <% end %>
 </ul>
 
 <h2 id="contact" class="contact">Contactez-nous</h2>
