@@ -406,7 +406,7 @@ a.link_button_green_large {
   @include respond-min($main_menu-mobile_menu_cutoff) {
     position: absolute;
     left: ($logo-width + 40px);
-    top: 2.2em;
+    top: 0.5em;
     right: auto;
   }
   .locale-list-trigger {
@@ -468,8 +468,8 @@ a.link_button_green_large {
   font-size: 0.8125em;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     position: absolute;
-    top: 2em;
-    left: 0;
+    top: 3.5em;
+    left: 15px;
     z-index: 1000;
     border-radius: 3px;
     font-size: 1em;
