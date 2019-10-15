@@ -296,14 +296,18 @@ a.link_button_green_large {
 
 .js-loaded {
   .account-link {
+    color: $color_white;
     padding-right: 2em;
     @include respond-min( $main_menu-mobile_menu_cutoff ){
       //make it appear like it's aligned with the grid, even though it isn't
       margin-right: 0.935em;
-      &:after {
-        top: 2em;
-      }
     }
+  }
+}
+
+.account-link-menu-item {
+  .sign_in_link {
+    color: $color_white;
   }
 }
 
