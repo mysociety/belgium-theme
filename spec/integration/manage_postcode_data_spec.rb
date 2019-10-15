@@ -42,7 +42,7 @@ end
 
 describe 'Managing postcode data' do
 
-  let(:user) { login(FactoryGirl.create(:user, :postcode => 'SW1A 1AA')) }
+  let(:user) { login(FactoryBot.create(:user, :postcode => 'SW1A 1AA')) }
 
   it 'allows a user to change their postcode' do
     using_session(user) do

@@ -39,7 +39,7 @@ end
 
 describe 'Managing province data' do
 
-  let(:user) { login(FactoryGirl.create(:user, :province => 'Bruxelles')) }
+  let(:user) { login(FactoryBot.create(:user, :province => 'Bruxelles')) }
 
   it 'allows a user to change their province' do
     using_session(user) do
