@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # Additional help page example
   # match '/help/help_out' => 'help#help_out'
 
+  get '/participer', to: redirect('http://anticor.be/participer')
+  get '/neemdeel', to: redirect('http://anticor.be/neemdeel')
+
   get '/help/conditions' => 'help#conditions', :as => 'help_conditions'
   get '/help/cada' => 'help#cada', :as => 'help_cada'
 
