@@ -1,3 +1,4 @@
+
 /* Mixin styles */
 
 /* Hide text when it's replaced by an image */
@@ -21,6 +22,7 @@
     background-color: darken($color_primary, 15%);
     color: $color_white;
   }
+
 }
 
 /* Selected menu item */
@@ -121,7 +123,10 @@ body{
 }
 
 a {
-  color: $link-color;
+  &:link,
+  &:visited {
+    color: $link-color;
+  }
   &:hover,
   &:active,
   &:focus {
@@ -269,45 +274,25 @@ a.link_button_green_large {
   border-bottom-left-radius: 0;
 }
 
-
 /* Popups */
 
 .popup {
-  background-color: #1b1b1b;
-  border: 1px solid white;
-  color: white;
-  margin-top: 0px;
-
-  img { margin: 0 10px; }
-
-  a {
-    color: white;
-    font-weight: bold;
-    &:hover,
-    &:active,
-    &:focus {
-      color: $color_orange;
-    }
-  }
-
-  .popup-close {
-    color: white;
-    background: url('/assets/small-white-cross.png') no-repeat 0;
-  }
+  background-color: desaturate(lighten($notice-color, 30%),10%);
+  border: 3px solid $notice-color;
 }
 
 
 /* Header */
 
 .topnav {
-  background-color: darken($color_primary, 10%);
+  background-color: $topnav_bg;
   @media( min-width: $main_menu-mobile_menu_cutoff ) {
     box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
   }
 }
 
 #banner_inner {
-  background-color: $color_primary;
+  background-color: $banner_inner_bg;
 }
 
 .site-title__logo {
@@ -358,43 +343,6 @@ a.link_button_green_large {
   color: $color_primary;
   border-radius: 0;
   font-size: inherit;
-}
-
-.js-loaded {
-  .account-link {
-    color: $color_white;
-    @include respond-min( $main_menu-mobile_menu_cutoff ){
-      //make it appear like it's aligned with the grid, even though it isn't
-      margin-right: 0.935em;
-    }
-  }
-}
-
-.account-link-menu-item {
-  .sign_in_link {
-    color: $color_white;
-  }
-}
-
-.no-js {
-  .navigation .logged-in-menu a,
-  .navigation .logged-in-menu__signout-link a {
-    @extend %menu-item;
-  }
-}
-
-.js-loaded {
-  .navigation .logged-in-menu__signout-link a {
-    @include respond-min( $main_menu-mobile_menu_cutoff ){
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 0.8em;
-      color: #888;
-      &:hover {
-        color: #888;
-      }
-    }
-  }
 }
 
 .greeting {
@@ -604,8 +552,8 @@ p.locale-list-trigger {
 
   .rsp_menu_button{
     position: absolute;
-    top: 13px; // vertically centre the button in the header
-    right: 13px;
+    top: 5px; // vertically centre the button in the header
+    right: 4px; // 15px for margin minus 9 for background offset
     @extend .image-replacement;
     background-image: image-url('hamburger.png');
     background-repeat: no-repeat;
@@ -627,23 +575,6 @@ p.locale-list-trigger {
       right: 4px;
     }
   }
-
-  /* Pad evenly top and bottom on smaller devices */
-  #logo_wrapper{
-
-    @include respond-min( $main_menu-mobile_menu_cutoff ){
-      @include lte-ie7 {
-        padding-bottom: 2em;
-      }
-    }
-    @media(max-width: $main_menu-mobile_menu_cutoff ){
-      padding: 0.5em 0 0.5em 0.9375em;
-      img {
-        height: 30px;
-      }
-    }
-  }
-
 }
 
 
@@ -664,7 +595,6 @@ p.locale-list-trigger {
 }
 
 .footer__about {
-  width: auto;
   h2 {
     color: $color_white;
   }
@@ -694,7 +624,6 @@ p.locale-list-trigger {
   }
 
   .action-bar__follower-count {
-    color: $color_dark_grey;
     @include follower-count();
   }
 }
@@ -709,7 +638,7 @@ div.correspondence {
 
 .incoming.correspondence {
   border-top: 8px solid $color_secondary;
-  a {
+  .correspondence_text a {
     color: $color_secondary;
   }
   a.link_to_this {
@@ -722,6 +651,11 @@ div.correspondence {
   a.link_to_this {
     background-color: $color_primary;
   }
+}
+
+a.correspondence__header__date,
+a.correspondence__header__date:visited {
+  color: #777;
 }
 
 .describe_state_form input[type="radio"] + label {
@@ -749,11 +683,6 @@ a.link_to_this {
     background-color: $color_secondary;
     float: right;
   }
-}
-
-a.correspondence__header__date,
-a.correspondence__header__date:visited {
-  color: #777;
 }
 
 .describe_state_form {
@@ -790,6 +719,14 @@ a.correspondence__header__date:visited {
      background-image:image-url('youtube@2.png');
   }
 }
+
+.report-this-request {
+  @include button-secondary();
+  color: $color_black !important;
+  /* Using !important here as a temporary fix for a bad declaration (a:link)
+    in Alaveteli core. When this is fixed it can be removed.
+  */
+ }
 
 /* Status lines and icons */
 .icon_waiting_classification,
@@ -835,31 +772,6 @@ a.correspondence__header__date:visited {
   }
   .view_html_logo, .view_html_description {
     padding-top: 1em;
-  }
-}
-
-
-.request-footer__action-bar__actions {
-  .action-menu__button {
-    @extend .button-secondary;
-    padding-right: 2em;
-    &:after {
-      border-color: #a5a5a5 transparent transparent transparent;
-      right: 7%;
-    }
-  }
-
-  a.link_button_green,
-  a.track_action {
-    line-height: 1.5em;
-    @include follow-button;
-  }
-
-  .action-bar__follower-count {
-    color: $color_dark_grey;
-    @include respond-min($main_menu-mobile_menu_cutoff) {
-      @include follower-count;
-    }
   }
 }
 
@@ -1092,7 +1004,6 @@ dt {
       color: $color_white;
     }
   }
-
   .new-request__make-new-requests {
     @include button-base;
     background-color: desaturate(darken($color_secondary, 10%), 5%);
