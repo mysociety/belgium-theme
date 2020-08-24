@@ -13,32 +13,34 @@
   </ul>
 
   <h2 id="private-requests">
-    Private requests
+    Demandes privées
    <a href="#private-requests">#</a>
   </h2>
 
   <p>
-    Pro users can set a privacy period on a request to delay publication while
-    you work on your story or investigation.
+    Les utilisateurs d’un compte « Pro » peuvent choisir une période de
+    confidentialité sur une demande pour en retarder la publication durant leur
+    travail d’investigation ou de rédaction.
   </p>
 
   <p>
-    When a request is private we guarantee that it will only be visible on
-    <%= AlaveteliConfiguration.site_name %> for the period you select.
-    <%= AlaveteliConfiguration.pro_site_name %> administrators will also be able
-    to view your request, but will only do so in the event that they need to fix
-    a problem with it (e.g. failed delivery to the authority). They will not
-    reveal the contents of your request or any response you get to anyone else.
-    The authority may still publish it in a disclosure log as usual.
+    Lorsqu’une demande est introduite en mode privé, nous garantissons qu’elle
+    ne sera pas visible sur <%= AlaveteliConfiguration.site_name %> avant la
+    fin de la période choisie.  Pour résoudre un problème (comme par exemple en
+    cas d’échec de la réception de la demande par l’autorité) ,les
+    administrateurs du site <%= AlaveteliConfiguration.pro_site_name %>
+    pourront aussi voir votre demande. Ils ne transmettront ni ne révèleront
+    sont contenu à personne d’autres. Comme d’habitude l’autorité publique
+    pourrait choisir de publier sa réponse ailleurs.
   </p>
 
   <h3 id="how-long-can-i-keep-requests-private">
-    How long can I keep requests private?
+    Combien de temps puis-je garder ma demande en mode confidentiel ?
    <a href="#how-long-can-i-keep-requests-private">#</a>
   </h3>
 
   <p>
-    Privacy periods can be set for 3, 6 and 12 month periods.
+    Vous pouvez choisir des périodes de confidentialité de 3,6 et 12 mois
   </p>
 
   <p>
@@ -47,25 +49,26 @@
   </p>
 
   <p>
-    You will be automatically notified a week before the privacy period expires,
-    and on the date of expiry.
+    Vous serez automatiquement prévenu une semaine avant l’expiration de la
+    période de confidentialité et aussi le jour de la date d’expiration.
   </p>
 
   <p>
-    Once the privacy period ends, your request and following correspondence,
-    including <strong>your name</strong>, will be <strong>
-    <%= link_to 'displayed publicly',
-      help_privacy_path(anchor: 'public_request') %></strong> on this website.
+    A la fin de la période d’expiration, votre demande et les échanges de
+    réponses qu’elle a engendré ainsi que <strong>votre nom</strong>,
+    deviendront <strong>
+    <%= link_to 'visible',
+      help_privacy_path(anchor: 'public_request') %></strong> sur le site web.
   </p>
 
   <h3 id="i-need-more-time-can-i-extend-a-privacy-period">
-    I need more time. Can I extend a privacy period?
+    J'ai besoin de plus de temps. Puis-je prolonger une période de confidentialité?
    <a href="#i-need-more-time-can-i-extend-a-privacy-period">#</a>
   </h3>
 
   <p>
-    Privacy periods can be extended, but only in the week before the expiry
-    date.
+    Les délais de confidentialité peuvent être prolongés, mais uniquement dans
+    la semaine précédant la date d'expiration.
   </p>
 
   <p>
@@ -74,17 +77,18 @@
   </p>
 
   <p>
-    There is no limit to the number of times a privacy period may be extended,
-    but each extension requires manual confirmation.
+    Il n'y a pas de limite au nombre de fois qu'une période de confidentialité
+    peut être prolongée, mais chaque extension nécessite une confirmation
+    manuelle.
   </p>
 
   <h3 id="how-do-i-publish-a-request">
-    How do I publish a request?
+    Comment publier une demande?
    <a href="#how-do-i-publish-a-request">#</a>
   </h3>
 
   <p>
-    Requests can be published at any time.
+    Les demandes peuvent être publiées à tout moment.
   </p>
 
   <p>
@@ -93,35 +97,37 @@
   </p>
 
   <h3 id="can-i-make-private-batch-requests">
-    Can I make private batch requests?
+    Puis-je faire des demandes par lots qui restent confidentielles ?
    <a href="#can-i-make-private-batch-requests">#</a>
   </h3>
 
   <p>
-    Privacy periods can also be set on batch requests, and their operation
-    follows the same principles as individual requests. Changes to a privacy
-    period on one request belonging to a batch are mirrored to all requests in
-    the batch.
+    Des périodes de confidentialité peuvent également être définies pour les
+    demandes par lots, et leur fonctionnement suit les mêmes principes que les
+    demandes individuelles. Les modifications apportées à une période de
+    confidentialité sur une demande appartenant à un lot sont reflétées sur
+    toutes les demandes du lot.
   </p>
 
   <h2 id="batch">
-    Batch
+    Lot
    <a href="#batch">#</a>
   </h2>
 
   <p>
-    Batch makes it easy to send and manage requests to multiple authorities.
+    L’envoi groupé par lots (batch) de demandes  facilite l'envoi et la gestion
+    des demandes à plusieurs autorités.
   </p>
 
   <h3 id="how-do-i-make-a-batch-request">
-    How do I make a batch request?
+    Comment faire une demande par lot?
    <a href="#how-do-i-make-a-batch-request">#</a>
   </h3>
 
   <p>
-    Batch allows you to select a list of authorities and write a template
-    request. The request gets sent individually to each authority like a mail
-    merge.
+    Un Lot (batch) vous permet de sélectionner une liste d'autorités et
+    d'écrire une demande modèle. La demande est envoyée individuellement à
+    chaque autorité comme un publipostage.
   </p>
 
   <p>
@@ -135,14 +141,15 @@
   </p>
 
   <h3 id="how-do-i-manage-a-batch-request">
-    How do I manage a batch request?
+    Comment gérer une demande par lot?
    <a href="#how-do-i-manage-a-batch-request">#</a>
   </h3>
 
   <p>
-    Progress of a batch can be managed with a convenient progress meter to see
-    how close you are to getting responses from all authorities and making it
-    easy to choose which action to take next.
+    La progression d'un lot de demandes peut être gérée avec un indicateur de
+    progression pratique pour voir dans quelle mesure vous êtes proche
+    d'obtenir des réponses de toutes les autorités et de choisir facilement
+    l'action à entreprendre ensuite.
   </p>
 
   <p>
@@ -151,13 +158,13 @@
   </p>
 
   <h3 id="how-do-i-manage-batch-privacy-periods">
-    How do I manage batch privacy periods?
+    Comment gérer les périodes de confidentialité des lots ?
    <a href="#how-do-i-manage-batch-privacy-periods">#</a>
   </h3>
 
   <p>
-    Batches can be made private, and privacy periods easily managed across the
-    batch.
+    Les lots peuvent être rendus privés et les périodes de confidentialité
+    facilement gérées sur l'ensemble du lot.
   </p>
 
   <p>
@@ -166,30 +173,32 @@
   </p>
 
   <h3 id="how-many-authorities-can-i-add-to-a-batch">
-    How many authorities can I add to a batch?
+    Combien d'autorités puis-je ajouter à un lot?
    <a href="#how-many-authorities-can-i-add-to-a-batch">#</a>
   </h3>
 
   <p>
-    The maximum number of authorities that can be added to a batch is
+    Le nombre maximal d'autorités pouvant être ajoutées à un lot est de
     <%= AlaveteliConfiguration.pro_batch_authority_limit %>.
   </p>
 
   <h3 id="how-many-batch-requests-can-i-make">
-    How many batch requests can I make?
+    Combien de demandes par lots puis-je faire?
    <a href="#how-many-batch-requests-can-i-make">#</a>
   </h3>
 
   <p>
-    We recommend sending a pilot batch to a sample of authorities to test the
-    request. Once you know the authorities hold the type of data that you’re
-    asking for you can then request from the remaining authorities.
+    Nous vous recommandons d'envoyer un lot pilote à un échantillon d'autorités
+    pour tester la demande. Une fois que vous savez que les autorités
+    détiennent le type de données que vous demandez, vous pouvez alors demander
+    aux autorités restantes.
   </p>
 
   <p>
-    There’s no limit to the number of batches that can be sent, but Pro users
-    are required to abide by our guidelines about writing
-    <%= link_to 'responsible requests',
+    Il n'y a pas de limite au nombre de lots qui peuvent être envoyés, mais les
+    utilisateurs Pro sont tenus de respecter nos directives concernant la
+    rédaction de
+    <%= link_to 'demandes responsables',
       help_requesting_path(anchor: 'responsible') %>.
   </p>
 </div>
