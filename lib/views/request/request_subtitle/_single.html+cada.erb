@@ -1,0 +1,5 @@
+<!-- Never show the (admin) links on the saisine PDF document -->
+<%= _('{{user}} made this {{law_used_full}} request to {{public_body}}',
+      user: request_user_link(info_request, _('An anonymous user')),
+      law_used_full: h(info_request.legislation.to_s(:full)),
+      public_body: public_body_link(info_request.public_body)) %>

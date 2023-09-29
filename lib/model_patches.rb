@@ -20,6 +20,34 @@ Rails.configuration.to_prepare do
   #     "If you uncomment this line, this text will appear as default text in every message"
   #   end
   # end
+  #
+  InfoRequest.class_eval do
+    def make_zip_cache_path_for_saisine(user)
+      # This method is only used for the saisine CADA PDF doc.
+      # The filename needs to be different from the "regular" PDF as the content
+      # of this one is different. This prevents the cache from returning the wrong
+      # file, should users request both files.
+      # The zip file varies depending on user because it can include different
+      # messages depending on whether the user can access hidden or
+      # requester_only messages. We name it appropriately, so that every user
+      # with the right permissions gets a file with only the right things in it.
+      cache_file_dir = File.join(InfoRequest.download_zip_dir,
+                                 'download',
+                                 request_dirs,
+                                 last_update_hash)
+      cache_file_suffix = zip_cache_file_suffix(user)
+      File.join(cache_file_dir, "saisine_#{url_title}#{cache_file_suffix}.zip")
+    end
+
+    # extra translation that will not appear in transifex
+    def link_text_for_appeal_document
+      if FastGettext.locale == 'nl_BE'
+        'Download een zip bestand (voor een beroep bij CTB)'
+      else
+        'Télécharger un fichier zip pour votre recours CADA'
+      end
+    end
+  end
 
   User.class_eval do
     strip_attributes only: [:province, :postcode]
