@@ -14,7 +14,7 @@
     <% end %>
 
     <div>
-        (Reçu de: <%= incoming_message.from_email %> sur <%= @info_request.incoming_email %>)
+      (<%=_('From:')%> <%= incoming_message.from_email %> <%=_('To:')%> <%= @info_request.incoming_email %>)
     </div>
   </div>
 
