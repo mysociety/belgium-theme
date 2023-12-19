@@ -20,4 +20,8 @@ Rails.application.routes.draw do
           :as => :signchangeprovince,
           :via => [:get, :post]
   end
+
+  match '/request/:url_title/download_saisine' => 'request#download_entire_request_saisine',
+        :as => :download_entire_request_saisine,
+        :via => :get
 end
