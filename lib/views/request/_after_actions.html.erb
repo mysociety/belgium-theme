@@ -82,9 +82,11 @@
                 <%= link_to info_request.link_text_for_appeal_document, download_entire_request_saisine_path(:url_title => info_request.url_title) %>
               </li>
             <% end %>
+
             <li>
               <%= link_to _("Download a zip file of all correspondence"), download_entire_request_path(:url_title => info_request.url_title) %>
             </li>
+
             <li>
               <%= link_to _('View event history details'), request_details_path(info_request) %>
             </li>
