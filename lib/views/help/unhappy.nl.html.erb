@@ -30,7 +30,7 @@
 
 <p>
   <% if @info_request %>
-    <%= link_to "Demander une reconsidération", new_request_followup_path(:request_id => @info_request.id) + "?internal_review=1#followup", :class => 'link_button_green request-internal-review-action' %> en schrijf dan een boodschap aan de overheid om je vraag te bekijken.
+    <%= link_to "Demander une reconsidération", new_request_followup_path(@info_request.url_title, internal_review: 1, anchor: 'followup'), :class => 'link_button_green request-internal-review-action' %> en schrijf dan een boodschap aan de overheid om je vraag te bekijken.
   <% else %>
     Kies onderaan de verzoekpagina op Transparencia voor “Een heroverweging vragen”. Schrijf vervolgens een bericht naar de overheidsinstelling om uw verzoek opnieuw te overwegen. Vergeet hierbij niet om een link op te nemen naar de verzoekpagina op Transparencia zodat wij weten over welk verzoek het gaat.
   <% end %>
